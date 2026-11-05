@@ -67,10 +67,12 @@ products. See [docs/QUALITY_RULES.md](docs/QUALITY_RULES.md#custom-products-add-
 
 ## Live demo and licence
 
-- **Public link from your own PC (free):** `powershell -ExecutionPolicy Bypass -File scripts\start_public.ps1` starts the
-  app plus a Cloudflare quick tunnel and prints a public `https://<random>.trycloudflare.com` URL. It works only while
-  that window is open and the PC is on, and the URL changes on every start. (Hugging Face Docker Spaces now require a PRO
-  subscription; `scripts/deploy_hf_space.py` is ready for that case.)
+- **Permanent public link (free, from your own PC):** Tailscale Funnel publishes the local server at a fixed HTTPS address.
+  One-time setup: install Tailscale, sign in, then `tailscale funnel --bg 8000` (approve Funnel in the Tailscale admin page when
+  asked). Then keep the server running with `scripts\start_server.ps1` (restarts it if it exits). The site works only while the
+  PC is on and the server is running. `scripts\start_public.ps1` is an alternative that needs no account but gives a random
+  `trycloudflare.com` address that changes on every start. Hugging Face Docker Spaces now require a PRO subscription;
+  `scripts/deploy_hf_space.py` is ready for that case.
 - **Trained models:** GitHub Release `v1.0.0` (`python scripts/download_models.py`).
 - **Licence note:** the models are trained on MVTec AD, KolektorSDD2 and MPDD (CC BY-NC-SA 4.0) and NEU-CLS (research
   use). The models and their outputs are for **non-commercial use only**, with attribution to those datasets.
