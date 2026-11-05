@@ -67,8 +67,10 @@ products. See [docs/QUALITY_RULES.md](docs/QUALITY_RULES.md#custom-products-add-
 
 ## Live demo and licence
 
-- **Live app:** Hugging Face Space `swayamjitOP/qualityguard-ai` (see the link in the repository description). On the free tier
-  its data is reset when the Space restarts.
+- **Public link from your own PC (free):** `powershell -ExecutionPolicy Bypass -File scripts\start_public.ps1` starts the
+  app plus a Cloudflare quick tunnel and prints a public `https://<random>.trycloudflare.com` URL. It works only while
+  that window is open and the PC is on, and the URL changes on every start. (Hugging Face Docker Spaces now require a PRO
+  subscription; `scripts/deploy_hf_space.py` is ready for that case.)
 - **Trained models:** GitHub Release `v1.0.0` (`python scripts/download_models.py`).
 - **Licence note:** the models are trained on MVTec AD, KolektorSDD2 and MPDD (CC BY-NC-SA 4.0) and NEU-CLS (research
   use). The models and their outputs are for **non-commercial use only**, with attribution to those datasets.
