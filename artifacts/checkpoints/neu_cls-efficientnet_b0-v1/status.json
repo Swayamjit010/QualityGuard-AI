@@ -1,0 +1,15 @@
+{
+  "state": "completed",
+  "run_id": "neu_cls-efficientnet_b0-v1",
+  "arch": "efficientnet_b0",
+  "epoch": 6,
+  "epochs": 8,
+  "message": "completed",
+  "updated_at": "2026-11-04T21:57:23.531982+00:00",
+  "batch": 30,
+  "batches": 40,
+  "val_acc": 1.0,
+  "val_loss": 0.04525114223361015,
+  "test_accuracy": 1.0,
+  "test_f1_macro": 1.0
+}

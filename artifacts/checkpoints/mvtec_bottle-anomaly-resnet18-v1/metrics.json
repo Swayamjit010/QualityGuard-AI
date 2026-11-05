@@ -1,0 +1,259 @@
+{
+  "run_id": "mvtec_bottle-anomaly-resnet18-v1",
+  "category": "bottle",
+  "backbone": "resnet18",
+  "dataset_version": "924a4fb64ceb",
+  "split_sizes": {
+    "train": 189,
+    "val": 61,
+    "test": 42
+  },
+  "fit": {
+    "patchcore": {
+      "patches_total": 193536,
+      "memory_bank": 1935,
+      "feature_dim": 384,
+      "fit_s": 497.0055375099182
+    },
+    "padim": {
+      "positions": 4096,
+      "dims": 100,
+      "train_images": 189,
+      "fit_s": 88.76623439788818
+    },
+    "global_novelty": {
+      "reference_images": 189
+    }
+  },
+  "engines": {
+    "patchcore": {
+      "threshold_recall95_val": 2.124903917312622,
+      "threshold_f1_val": 2.109600067138672,
+      "val": {
+        "num_samples": 61,
+        "num_anomalous": 31,
+        "image_auroc": 1.0,
+        "image_ap": 0.9999999999999999,
+        "threshold": 2.124903917312622,
+        "tp": 30,
+        "fp": 0,
+        "tn": 30,
+        "fn": 1,
+        "accuracy": 0.9836065573770492,
+        "precision": 1.0,
+        "recall": 0.967741935483871,
+        "f1": 0.9836065573770492,
+        "false_negative_rate": 0.03225806451612903,
+        "false_positive_rate": 0.0
+      },
+      "test": {
+        "num_samples": 42,
+        "num_anomalous": 32,
+        "image_auroc": 1.0,
+        "image_ap": 1.0,
+        "threshold": 2.124903917312622,
+        "tp": 31,
+        "fp": 0,
+        "tn": 10,
+        "fn": 1,
+        "accuracy": 0.9761904761904762,
+        "precision": 1.0,
+        "recall": 0.96875,
+        "f1": 0.9841269841269841,
+        "false_negative_rate": 0.03125,
+        "false_positive_rate": 0.0
+      },
+      "test_at_f1_threshold": {
+        "num_samples": 42,
+        "num_anomalous": 32,
+        "image_auroc": 1.0,
+        "image_ap": 1.0,
+        "threshold": 2.109600067138672,
+        "tp": 31,
+        "fp": 0,
+        "tn": 10,
+        "fn": 1,
+        "accuracy": 0.9761904761904762,
+        "precision": 1.0,
+        "recall": 0.96875,
+        "f1": 0.9841269841269841,
+        "false_negative_rate": 0.03125,
+        "false_positive_rate": 0.0
+      },
+      "pixel_threshold_val": 1.9075052835981725,
+      "pixel_dice_val": 0.6564549415490096,
+      "test_pixel": {
+        "pixel_auroc": 0.9823526668167998,
+        "pixel_ap": 0.7299954238050966,
+        "mean_iou_defective": 0.5068551500010277,
+        "mean_dice_defective": 0.6442426483087906,
+        "pixel_threshold": 1.9075052835981725
+      },
+      "test_per_defect_type": {
+        "broken_large": {
+          "n": 10,
+          "flagged_anomalous": 10
+        },
+        "broken_small": {
+          "n": 11,
+          "flagged_anomalous": 11
+        },
+        "contamination": {
+          "n": 11,
+          "flagged_anomalous": 10
+        },
+        "good": {
+          "n": 10,
+          "flagged_anomalous": 0
+        }
+      },
+      "score_stats_val_good": {
+        "mean": 1.4472154378890991,
+        "max": 1.6458632946014404
+      }
+    },
+    "padim": {
+      "threshold_recall95_val": 16.922788619995117,
+      "threshold_f1_val": 15.54380989074707,
+      "val": {
+        "num_samples": 61,
+        "num_anomalous": 31,
+        "image_auroc": 1.0,
+        "image_ap": 0.9999999999999999,
+        "threshold": 16.922788619995117,
+        "tp": 30,
+        "fp": 0,
+        "tn": 30,
+        "fn": 1,
+        "accuracy": 0.9836065573770492,
+        "precision": 1.0,
+        "recall": 0.967741935483871,
+        "f1": 0.9836065573770492,
+        "false_negative_rate": 0.03225806451612903,
+        "false_positive_rate": 0.0
+      },
+      "test": {
+        "num_samples": 42,
+        "num_anomalous": 32,
+        "image_auroc": 0.99375,
+        "image_ap": 0.9980764678030303,
+        "threshold": 16.922788619995117,
+        "tp": 32,
+        "fp": 1,
+        "tn": 9,
+        "fn": 0,
+        "accuracy": 0.9761904761904762,
+        "precision": 0.9696969696969697,
+        "recall": 1.0,
+        "f1": 0.9846153846153847,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.1
+      },
+      "test_at_f1_threshold": {
+        "num_samples": 42,
+        "num_anomalous": 32,
+        "image_auroc": 0.99375,
+        "image_ap": 0.9980764678030303,
+        "threshold": 15.54380989074707,
+        "tp": 32,
+        "fp": 1,
+        "tn": 9,
+        "fn": 0,
+        "accuracy": 0.9761904761904762,
+        "precision": 0.9696969696969697,
+        "recall": 1.0,
+        "f1": 0.9846153846153847,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.1
+      },
+      "pixel_threshold_val": 13.374610728328506,
+      "pixel_dice_val": 0.6908651484211773,
+      "test_pixel": {
+        "pixel_auroc": 0.9851461261480218,
+        "pixel_ap": 0.7689297453957384,
+        "mean_iou_defective": 0.5607222111253687,
+        "mean_dice_defective": 0.6923358567042928,
+        "pixel_threshold": 13.374610728328506
+      },
+      "test_per_defect_type": {
+        "broken_large": {
+          "n": 10,
+          "flagged_anomalous": 10
+        },
+        "broken_small": {
+          "n": 11,
+          "flagged_anomalous": 11
+        },
+        "contamination": {
+          "n": 11,
+          "flagged_anomalous": 11
+        },
+        "good": {
+          "n": 10,
+          "flagged_anomalous": 1
+        }
+      },
+      "score_stats_val_good": {
+        "mean": 11.031850814819336,
+        "max": 14.702808380126953
+      }
+    }
+  },
+  "fusion": {
+    "rule": "FAIL if all engines >= own threshold; PASS if all below; else REVIEW. REVIEW also if any score within +/-8% of its threshold.",
+    "review_margin": 0.08,
+    "review_rate": 0.07142857142857142,
+    "auto_decided": 39,
+    "auto_accuracy": 1.0,
+    "missed_defects_auto_pass": 0,
+    "false_rejects_auto_fail": 0,
+    "defects_sent_to_review": 2
+  },
+  "unfamiliar_pattern": {
+    "threshold": 0.22626741230487823,
+    "threshold_rule": "1.05 x max global kNN distance on calibration images",
+    "test_in_distribution_flag_rate": 0.0,
+    "foreign_images": 60,
+    "foreign_detection_rate": 1.0,
+    "foreign_sources": [
+      "mvtec_ad",
+      "neu_cls"
+    ]
+  },
+  "latency_ms_median": {
+    "patchcore": 337.40440011024475,
+    "padim": 188.69660003110766
+  },
+  "threads": 5,
+  "total_time_s": 795.4888167381287,
+  "completed_at": "2026-11-04T21:11:13.749384+00:00",
+  "preprocess": {
+    "input_size": 256,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "color_mode": "rgb",
+    "clahe": false,
+    "denoise": false,
+    "augment": {}
+  },
+  "deployed_engines": [
+    "patchcore",
+    "padim"
+  ],
+  "engine_selection": {
+    "rule": "engines with validation image AUROC >= 0.90 vote; others are reported only",
+    "val_image_auroc": {
+      "patchcore": 1.0,
+      "padim": 1.0
+    },
+    "applied": "2026-11-05, post-hoc from the stored validation metrics (no refit)"
+  }
+}

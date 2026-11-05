@@ -1,0 +1,15 @@
+{
+  "state": "completed",
+  "run_id": "ksdd2-efficientnet_b0-v1",
+  "arch": "efficientnet_b0",
+  "epoch": 10,
+  "epochs": 10,
+  "message": "completed",
+  "updated_at": "2026-11-05T10:08:00.524538+00:00",
+  "batch": 60,
+  "batches": 62,
+  "val_acc": 0.96,
+  "val_loss": 0.3281095325946808,
+  "test_accuracy": 0.9641434262948207,
+  "test_f1_macro": 0.9102529721998749
+}

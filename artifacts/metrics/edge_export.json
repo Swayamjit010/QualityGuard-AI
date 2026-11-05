@@ -1,0 +1,80 @@
+[
+  {
+    "run_id": "neu_cls-mobilenet_v3_small-v1",
+    "arch": "mobilenet_v3_small",
+    "dataset": "neu_cls",
+    "test_images": 270,
+    "calibration_images_val": 100,
+    "threads": 1,
+    "onnxruntime": "1.26.0",
+    "variants": {
+      "pytorch_fp32": {
+        "accuracy": 0.9962962962962963,
+        "f1_macro": 0.9962958389924682,
+        "latency_ms": 5.44,
+        "size_mb": 5.93,
+        "agreement_with_pytorch": 1.0,
+        "max_abs_logit_diff": 0.0
+      },
+      "onnx_fp32": {
+        "accuracy": 0.9962962962962963,
+        "f1_macro": 0.9962958389924682,
+        "latency_ms": 2.35,
+        "size_mb": 5.82,
+        "agreement_with_pytorch": 1.0,
+        "max_abs_logit_diff": 4.4345855712890625e-05
+      },
+      "onnx_int8": {
+        "accuracy": 0.34074074074074073,
+        "f1_macro": 0.2482090826531335,
+        "latency_ms": 2.65,
+        "size_mb": 1.77,
+        "agreement_with_pytorch": 0.34444444444444444,
+        "max_abs_logit_diff": 8.836140632629395
+      }
+    },
+    "files": {
+      "onnx_fp32": "artifacts/edge/neu_cls-mobilenet_v3_small-v1.onnx",
+      "onnx_int8": "artifacts/edge/neu_cls-mobilenet_v3_small-v1.int8.onnx"
+    }
+  },
+  {
+    "run_id": "neu_cls-mobilenet_v2-v1",
+    "arch": "mobilenet_v2",
+    "dataset": "neu_cls",
+    "test_images": 270,
+    "calibration_images_val": 100,
+    "threads": 1,
+    "onnxruntime": "1.26.0",
+    "variants": {
+      "pytorch_fp32": {
+        "accuracy": 1.0,
+        "f1_macro": 1.0,
+        "latency_ms": 16.88,
+        "size_mb": 8.73,
+        "agreement_with_pytorch": 1.0,
+        "max_abs_logit_diff": 0.0
+      },
+      "onnx_fp32": {
+        "accuracy": 1.0,
+        "f1_macro": 1.0,
+        "latency_ms": 7.67,
+        "size_mb": 8.49,
+        "agreement_with_pytorch": 1.0,
+        "max_abs_logit_diff": 3.719329833984375e-05
+      },
+      "onnx_int8": {
+        "accuracy": 1.0,
+        "f1_macro": 1.0,
+        "latency_ms": 4.6,
+        "size_mb": 2.49,
+        "agreement_with_pytorch": 1.0,
+        "max_abs_logit_diff": 1.7150568962097168
+      }
+    },
+    "files": {
+      "onnx_fp32": "artifacts/edge/neu_cls-mobilenet_v2-v1.onnx",
+      "onnx_int8": "artifacts/edge/neu_cls-mobilenet_v2-v1.int8.onnx"
+    }
+  }
+]

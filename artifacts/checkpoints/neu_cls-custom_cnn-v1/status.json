@@ -1,0 +1,15 @@
+{
+  "state": "completed",
+  "run_id": "neu_cls-custom_cnn-v1",
+  "arch": "custom_cnn",
+  "epoch": 25,
+  "epochs": 25,
+  "message": "completed",
+  "updated_at": "2026-11-04T22:20:17.566123+00:00",
+  "batch": 30,
+  "batches": 40,
+  "val_acc": 0.9962962962962963,
+  "val_loss": 0.05065523833036423,
+  "test_accuracy": 0.9962962962962963,
+  "test_f1_macro": 0.9962958389924682
+}

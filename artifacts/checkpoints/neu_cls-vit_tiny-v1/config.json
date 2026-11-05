@@ -1,0 +1,39 @@
+{
+  "arch": "vit_tiny",
+  "dataset": "neu_cls",
+  "run_id": "neu_cls-vit_tiny-v1",
+  "pretrained": true,
+  "epochs": 8,
+  "freeze_epochs": 1,
+  "batch_size": 16,
+  "lr": 0.0005,
+  "backbone_lr_mult": 0.1,
+  "weight_decay": 0.0001,
+  "optimizer": "adamw",
+  "loss": "ce",
+  "label_smoothing": 0.05,
+  "class_weighting": true,
+  "dropout": 0.2,
+  "patience": 3,
+  "seed": 42,
+  "num_workers": 0,
+  "resume": false,
+  "max_minutes": 35.0,
+  "preprocess": {},
+  "tags": {},
+  "dataset_version": "4621cecf40e7",
+  "classes": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled-in_scale",
+    "scratches"
+  ],
+  "device": {
+    "torch": "2.8.0+cpu",
+    "cuda_available": false,
+    "device": "cpu",
+    "cpu_threads": 10
+  }
+}

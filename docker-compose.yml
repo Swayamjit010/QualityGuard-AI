@@ -1,0 +1,21 @@
+# docker compose up --build
+# Mounts trained models (artifacts/), datasets (data/) and runtime state (storage/) from the host.
+services:
+  qualityguard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: qualityguard-ai:latest
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: ./.env
+        required: false
+    environment:
+      QG_ENVIRONMENT: production
+      QG_CORS_ORIGINS: http://localhost:8000
+    volumes:
+      - ./artifacts:/app/artifacts
+      - ./data:/app/data
+      - ./storage:/app/storage
+    restart: unless-stopped

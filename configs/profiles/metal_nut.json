@@ -1,0 +1,88 @@
+{
+  "id": "metal_nut",
+  "version": 1,
+  "name": "Metal nut",
+  "description": "Unsupervised anomaly detection + localisation for metal nuts (MVTec AD 'metal_nut' domain).",
+  "product_type": "object",
+  "dataset": "mvtec_metal_nut",
+  "configuration_note": "EXAMPLE configuration: small low-severity cosmetic regions are tolerated (fail at 'medium'). Area bands are illustrative.",
+  "assumes_defect_present": false,
+  "defect_classes": [
+    "bent",
+    "color",
+    "flip",
+    "scratch"
+  ],
+  "normal_classes": [
+    "good"
+  ],
+  "image": {
+    "min_side_px": 128,
+    "min_contrast": 3.0,
+    "expected_color_mode": "color",
+    "min_sharpness_norm": 34.08
+  },
+  "calibration": {
+    "mm_per_pixel": null
+  },
+  "min_region_area_px": 60,
+  "models": {
+    "classifiers": [],
+    "anomaly": "mvtec_metal_nut-anomaly-resnet18-v1"
+  },
+  "pipeline": {
+    "engines": [
+      "anomaly",
+      "novelty"
+    ],
+    "primary_anomaly_engine": "patchcore",
+    "cam_methods": []
+  },
+  "severity_rules": {
+    "default_level": "medium",
+    "area_metric": "defect_area_ratio",
+    "area_levels": [
+      {
+        "level": "low",
+        "max": 0.005
+      },
+      {
+        "level": "medium",
+        "max": 0.02
+      },
+      {
+        "level": "high",
+        "max": 0.05
+      },
+      {
+        "level": "critical",
+        "max": null
+      }
+    ],
+    "count_escalation": {
+      "regions_ge": 3,
+      "escalate_by": 1
+    },
+    "intensity_escalation": {
+      "score_ratio_ge": 2.0,
+      "escalate_by": 1
+    }
+  },
+  "acceptance_rules": {
+    "fail_at_severity": "medium",
+    "accept_below_fail_level": true,
+    "rejected_classes": [],
+    "unfamiliar_action": "INCONCLUSIVE",
+    "disagreement_action": "REVIEW REQUIRED"
+  },
+  "quality_index": {
+    "deductions": {
+      "none": 0,
+      "low": 10,
+      "medium": 35,
+      "high": 65,
+      "critical": 100
+    },
+    "review_cap": 60
+  }
+}

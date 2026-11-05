@@ -1,0 +1,125 @@
+{
+  "rule": "min_sharpness_norm = 0.5 x 1st percentile of train+val normalised sharpness (Laplacian variance at 256 px short side). Blur detection rates are measured on Gaussian-blurred copies of held-out test images (sigma relative to a 256 px short side).",
+  "profiles": {
+    "bottle": {
+      "calibration_images (train+val)": 250,
+      "train_p01": 122.79210021972656,
+      "train_median": 185.2822265625,
+      "min_sharpness_norm": 61.39605010986328,
+      "test_images": 42,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "commutator_surface": {
+      "calibration_images (train+val)": 400,
+      "train_p01": 61.96333994782917,
+      "train_median": 96.00234637574779,
+      "min_sharpness_norm": 30.981669973914585,
+      "test_images": 150,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "metal_grid": {
+      "calibration_images (train+val)": 301,
+      "train_p01": 565.2352382016834,
+      "train_median": 961.7516649716999,
+      "min_sharpness_norm": 282.6176191008417,
+      "test_images": 41,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "metal_nut": {
+      "calibration_images (train+val)": 276,
+      "train_p01": 68.16133089526556,
+      "train_median": 232.70716495625675,
+      "min_sharpness_norm": 34.08066544763278,
+      "test_images": 59,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "mpdd_bracket_black": {
+      "calibration_images (train+val)": 328,
+      "train_p01": 140.20801694192923,
+      "train_median": 383.62082625494804,
+      "min_sharpness_norm": 70.10400847096462,
+      "test_images": 40,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "mpdd_bracket_brown": {
+      "calibration_images (train+val)": 223,
+      "train_p01": 74.0596976309875,
+      "train_median": 125.064712457126,
+      "min_sharpness_norm": 37.02984881549375,
+      "test_images": 39,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "mpdd_bracket_white": {
+      "calibration_images (train+val)": 139,
+      "train_p01": 62.653244768893344,
+      "train_median": 142.42171938624233,
+      "min_sharpness_norm": 31.326622384446672,
+      "test_images": 31,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "mpdd_connector": {
+      "calibration_images (train+val)": 150,
+      "train_p01": 193.3171570729185,
+      "train_median": 316.46353894425556,
+      "min_sharpness_norm": 96.65857853645925,
+      "test_images": 22,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "mpdd_metal_plate": {
+      "calibration_images (train+val)": 102,
+      "train_p01": 204.50047709898092,
+      "train_median": 322.5810887104599,
+      "min_sharpness_norm": 102.25023854949046,
+      "test_images": 49,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "mpdd_tubes": {
+      "calibration_images (train+val)": 172,
+      "train_p01": 767.9483805557247,
+      "train_median": 980.5441908861976,
+      "min_sharpness_norm": 383.97419027786236,
+      "test_images": 51,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "screw": {
+      "calibration_images (train+val)": 398,
+      "train_p01": 67.69673536958406,
+      "train_median": 87.6420646449551,
+      "min_sharpness_norm": 33.84836768479203,
+      "test_images": 82,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 1.0,
+      "blur_sigma4_detect_rate": 1.0
+    },
+    "steel_strip": {
+      "calibration_images (train+val)": 400,
+      "train_p01": 4.280122722361702,
+      "train_median": 107.94518456305377,
+      "min_sharpness_norm": 2.140061361180851,
+      "test_images": 150,
+      "test_false_reject_rate": 0.0,
+      "blur_sigma2_detect_rate": 0.24666666666666667,
+      "blur_sigma4_detect_rate": 0.8133333333333334
+    }
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 1.2032314251339624,
+    "train_acc": 0.6928571428571428,
+    "val_loss": 0.539699375629425,
+    "val_acc": 0.9851851851851852,
+    "lr": 0.0009619397662556434,
+    "backbone_frozen": true,
+    "elapsed_s": 235.613671541214
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.5225245625253707,
+    "train_acc": 0.9285714285714286,
+    "val_loss": 0.06260271370410919,
+    "val_acc": 1.0,
+    "lr": 0.0008535533905932738,
+    "backbone_frozen": false,
+    "elapsed_s": 1090.3949642181396
+  },
+  {
+    "epoch": 3,
+    "train_loss": 0.3581745639679924,
+    "train_acc": 0.973015873015873,
+    "val_loss": 0.05466843396425247,
+    "val_acc": 1.0,
+    "lr": 0.0006913417161825451,
+    "backbone_frozen": false,
+    "elapsed_s": 127.59481573104858
+  },
+  {
+    "epoch": 4,
+    "train_loss": 0.3332019003610762,
+    "train_acc": 0.9785714285714285,
+    "val_loss": 0.05737658962607384,
+    "val_acc": 1.0,
+    "lr": 0.0005000000000000001,
+    "backbone_frozen": false,
+    "elapsed_s": 239.2455337047577
+  },
+  {
+    "epoch": 5,
+    "train_loss": 0.32141052881876625,
+    "train_acc": 0.9857142857142858,
+    "val_loss": 0.04844927787780762,
+    "val_acc": 1.0,
+    "lr": 0.0003086582838174552,
+    "backbone_frozen": false,
+    "elapsed_s": 351.94984555244446
+  },
+  {
+    "epoch": 6,
+    "train_loss": 0.3059875454221453,
+    "train_acc": 0.9865079365079366,
+    "val_loss": 0.05062568187713623,
+    "val_acc": 1.0,
+    "lr": 0.0001464466094067263,
+    "backbone_frozen": false,
+    "elapsed_s": 471.1996340751648
+  },
+  {
+    "epoch": 7,
+    "train_loss": 0.3211099200778537,
+    "train_acc": 0.9793650793650793,
+    "val_loss": 0.049350615590810776,
+    "val_acc": 1.0,
+    "lr": 3.8060233744356646e-05,
+    "backbone_frozen": false,
+    "elapsed_s": 587.0850811004639
+  },
+  {
+    "epoch": 8,
+    "train_loss": 0.30559467474619545,
+    "train_acc": 0.9865079365079366,
+    "val_loss": 0.045075178146362305,
+    "val_acc": 1.0,
+    "lr": 0.0,
+    "backbone_frozen": false,
+    "elapsed_s": 715.0076501369476
+  }
+]

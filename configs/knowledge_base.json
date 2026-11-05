@@ -1,0 +1,277 @@
+[
+ {
+  "defect_class": "crazing",
+  "profile_id": "steel_strip",
+  "title": "Crazing (steel strip)",
+  "visual_description": "Network of fine, short, interconnected cracks on the strip surface; appears as low-contrast irregular dark lines over most of the patch.",
+  "characteristics": [
+   "Low contrast",
+   "Distributed over a large area",
+   "Fine network texture"
+  ],
+  "inspection_guidance": [
+   "Confirm under raking light; texture is easily confused with rolled-in scale at low contrast.",
+   "Check neighbouring strip sections for extent."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: review rolling temperature and cooling logs for the affected coil (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "NEU surface defect database (Song & Yan, Applied Surface Science 2013) — visual descriptions summarised from dataset documentation."
+ },
+ {
+  "defect_class": "inclusion",
+  "profile_id": "steel_strip",
+  "title": "Inclusion (steel strip)",
+  "visual_description": "Isolated or clustered dark spots/streaks caused by non-metallic particles embedded in the surface.",
+  "characteristics": [
+   "Point- or streak-like",
+   "Darker than background",
+   "Often elongated along rolling direction"
+  ],
+  "inspection_guidance": [
+   "Measure the largest inclusion if a calibrated camera is available.",
+   "Distinguish from pitting: inclusions are embedded, pits are cavities."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: sample the coil for metallographic inspection (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "NEU surface defect database (Song & Yan, Applied Surface Science 2013) — visual descriptions summarised from dataset documentation."
+ },
+ {
+  "defect_class": "patches",
+  "profile_id": "steel_strip",
+  "title": "Patches (steel strip)",
+  "visual_description": "Irregular darker or lighter regions (blotches) of different surface appearance on the strip.",
+  "characteristics": [
+   "Large irregular regions",
+   "Varying grey level"
+  ],
+  "inspection_guidance": [
+   "Verify that the patch is not an illumination artefact by re-imaging."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: check descaling and lubrication conditions (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "NEU surface defect database (Song & Yan, Applied Surface Science 2013) — visual descriptions summarised from dataset documentation."
+ },
+ {
+  "defect_class": "pitted_surface",
+  "profile_id": "steel_strip",
+  "title": "Pitted surface (steel strip)",
+  "visual_description": "Many small cavities/pits distributed over the surface, giving a speckled appearance.",
+  "characteristics": [
+   "Many small dark points",
+   "Locally dense"
+  ],
+  "inspection_guidance": [
+   "Assess pit density per area if calibration is available."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: review pickling process parameters (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "NEU surface defect database (Song & Yan, Applied Surface Science 2013) — visual descriptions summarised from dataset documentation."
+ },
+ {
+  "defect_class": "rolled-in_scale",
+  "profile_id": "steel_strip",
+  "title": "Rolled-in scale (steel strip)",
+  "visual_description": "Oxide scale pressed into the surface during rolling; appears as irregular flaky dark marks.",
+  "characteristics": [
+   "Flake-like marks",
+   "Irregular distribution"
+  ],
+  "inspection_guidance": [
+   "Distinguish from crazing by the flake shape rather than crack network."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: check descaler nozzle condition (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "NEU surface defect database (Song & Yan, Applied Surface Science 2013) — visual descriptions summarised from dataset documentation."
+ },
+ {
+  "defect_class": "scratches",
+  "profile_id": "steel_strip",
+  "title": "Scratches (steel strip)",
+  "visual_description": "Thin, long, straight or slightly curved bright/dark lines, usually along the rolling direction.",
+  "characteristics": [
+   "Elongated (high aspect ratio)",
+   "Linear"
+  ],
+  "inspection_guidance": [
+   "Record scratch length and orientation; repeated position across items suggests a contact source."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: inspect rollers and guides in contact with the strip (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "NEU surface defect database (Song & Yan, Applied Surface Science 2013) — visual descriptions summarised from dataset documentation."
+ },
+ {
+  "defect_class": "broken_large",
+  "profile_id": "bottle",
+  "title": "Broken (large) — bottle",
+  "visual_description": "Large missing or fractured region of the bottle rim/mouth.",
+  "characteristics": [
+   "Large area",
+   "Rim region"
+  ],
+  "inspection_guidance": [
+   "Treat as safety-relevant; remove the item from the line."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: check handling equipment upstream for impact points (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "MVTec AD dataset documentation (Bergmann et al., CVPR 2019 / IJCV 2021) — defect type names as defined by the dataset."
+ },
+ {
+  "defect_class": "broken_small",
+  "profile_id": "bottle",
+  "title": "Broken (small) — bottle",
+  "visual_description": "Small chip or fracture at the bottle rim.",
+  "characteristics": [
+   "Small area",
+   "Rim region"
+  ],
+  "inspection_guidance": [
+   "Confirm visually; small chips may be under the localisation area threshold."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: inspect for recurring chip position (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "MVTec AD dataset documentation (Bergmann et al., CVPR 2019 / IJCV 2021) — defect type names as defined by the dataset."
+ },
+ {
+  "defect_class": "contamination",
+  "profile_id": "bottle",
+  "title": "Contamination — bottle",
+  "visual_description": "Foreign material or residue visible inside the bottle.",
+  "characteristics": [
+   "Irregular shape",
+   "Interior region"
+  ],
+  "inspection_guidance": [
+   "Distinguish removable residue from embedded defects."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: review washing stage (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "MVTec AD dataset documentation (Bergmann et al., CVPR 2019 / IJCV 2021) — defect type names as defined by the dataset."
+ },
+ {
+  "defect_class": "bent",
+  "profile_id": "metal_nut",
+  "title": "Bent — metal nut",
+  "visual_description": "Deformed lobe or edge of the nut.",
+  "characteristics": [
+   "Shape deviation",
+   "Edge region"
+  ],
+  "inspection_guidance": [
+   "Verify with a gauge if available."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: review press/forming tool wear (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "MVTec AD dataset documentation (Bergmann et al., CVPR 2019 / IJCV 2021) — defect type names as defined by the dataset."
+ },
+ {
+  "defect_class": "color",
+  "profile_id": "metal_nut",
+  "title": "Colour defect — metal nut",
+  "visual_description": "Discoloured region on the nut surface.",
+  "characteristics": [
+   "Colour change without shape change"
+  ],
+  "inspection_guidance": [
+   "Check under consistent lighting before rejecting."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: review coating/heat-treatment records (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "MVTec AD dataset documentation (Bergmann et al., CVPR 2019 / IJCV 2021) — defect type names as defined by the dataset."
+ },
+ {
+  "defect_class": "flip",
+  "profile_id": "metal_nut",
+  "title": "Flipped — metal nut",
+  "visual_description": "Nut presented upside down (logical/orientation anomaly rather than surface damage).",
+  "characteristics": [
+   "Whole-object appearance change"
+  ],
+  "inspection_guidance": [
+   "Often a feeding/orientation issue; part may be acceptable once re-oriented."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: check part feeder orientation (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "MVTec AD dataset documentation (Bergmann et al., CVPR 2019 / IJCV 2021) — defect type names as defined by the dataset."
+ },
+ {
+  "defect_class": "scratch",
+  "profile_id": "metal_nut",
+  "title": "Scratch — metal nut",
+  "visual_description": "Thin linear surface mark on the nut.",
+  "characteristics": [
+   "Elongated",
+   "Thin"
+  ],
+  "inspection_guidance": [
+   "Compare against product cosmetic criteria configured in the profile."
+  ],
+  "corrective_actions": [
+   {
+    "text": "Suggested follow-up: check handling contact points (unverified).",
+    "verified": false,
+    "verified_by": null
+   }
+  ],
+  "source": "MVTec AD dataset documentation (Bergmann et al., CVPR 2019 / IJCV 2021) — defect type names as defined by the dataset."
+ }
+]

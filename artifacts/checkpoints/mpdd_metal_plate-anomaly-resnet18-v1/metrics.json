@@ -1,0 +1,261 @@
+{
+  "run_id": "mpdd_metal_plate-anomaly-resnet18-v1",
+  "category": "metal_plate",
+  "backbone": "resnet18",
+  "dataset": "mpdd_metal_plate",
+  "dataset_version": "bcf30ac29d7e",
+  "split_sizes": {
+    "train": 49,
+    "val": 53,
+    "test": 49
+  },
+  "fit": {
+    "patchcore": {
+      "patches_total": 50176,
+      "memory_bank": 501,
+      "feature_dim": 384,
+      "fit_s": 9.381523609161377
+    },
+    "padim": {
+      "positions": 4096,
+      "dims": 100,
+      "train_images": 49,
+      "fit_s": 4.442631483078003
+    },
+    "global_novelty": {
+      "reference_images": 49
+    }
+  },
+  "engines": {
+    "patchcore": {
+      "threshold_recall95_val": 2.7124905586242676,
+      "threshold_f1_val": 2.677083969116211,
+      "val": {
+        "num_samples": 53,
+        "num_anomalous": 35,
+        "image_auroc": 0.9984126984126984,
+        "image_ap": 0.9992063492063493,
+        "threshold": 2.7124905586242676,
+        "tp": 34,
+        "fp": 0,
+        "tn": 18,
+        "fn": 1,
+        "accuracy": 0.9811320754716981,
+        "precision": 1.0,
+        "recall": 0.9714285714285714,
+        "f1": 0.9855072463768116,
+        "false_negative_rate": 0.02857142857142857,
+        "false_positive_rate": 0.0
+      },
+      "test": {
+        "num_samples": 49,
+        "num_anomalous": 36,
+        "image_auroc": 1.0,
+        "image_ap": 1.0,
+        "threshold": 2.7124905586242676,
+        "tp": 34,
+        "fp": 0,
+        "tn": 13,
+        "fn": 2,
+        "accuracy": 0.9591836734693877,
+        "precision": 1.0,
+        "recall": 0.9444444444444444,
+        "f1": 0.9714285714285714,
+        "false_negative_rate": 0.05555555555555555,
+        "false_positive_rate": 0.0
+      },
+      "test_at_f1_threshold": {
+        "num_samples": 49,
+        "num_anomalous": 36,
+        "image_auroc": 1.0,
+        "image_ap": 1.0,
+        "threshold": 2.677083969116211,
+        "tp": 36,
+        "fp": 0,
+        "tn": 13,
+        "fn": 0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_negative_rate": 0.0,
+        "false_positive_rate": 0.0
+      },
+      "pixel_threshold_val": 2.1130799579943638,
+      "pixel_dice_val": 0.7955827616817718,
+      "test_pixel": {
+        "pixel_auroc": 0.9805905966735672,
+        "pixel_ap": 0.9007603804065419,
+        "mean_iou_defective": 0.6970644561599876,
+        "mean_dice_defective": 0.811504496644561,
+        "pixel_threshold": 2.1130799579943638
+      },
+      "test_per_defect_type": {
+        "good": {
+          "n": 13,
+          "flagged_anomalous": 0
+        },
+        "major_rust": {
+          "n": 7,
+          "flagged_anomalous": 7
+        },
+        "scratches": {
+          "n": 17,
+          "flagged_anomalous": 16
+        },
+        "total_rust": {
+          "n": 12,
+          "flagged_anomalous": 11
+        }
+      },
+      "score_stats_val_good": {
+        "mean": 2.2433698177337646,
+        "max": 2.6948630809783936
+      }
+    },
+    "padim": {
+      "threshold_recall95_val": 22.767635345458984,
+      "threshold_f1_val": 22.64640998840332,
+      "val": {
+        "num_samples": 53,
+        "num_anomalous": 35,
+        "image_auroc": 0.4904761904761905,
+        "image_ap": 0.6860224958620861,
+        "threshold": 22.767635345458984,
+        "tp": 34,
+        "fp": 18,
+        "tn": 0,
+        "fn": 1,
+        "accuracy": 0.6415094339622641,
+        "precision": 0.6538461538461539,
+        "recall": 0.9714285714285714,
+        "f1": 0.7816091954022989,
+        "false_negative_rate": 0.02857142857142857,
+        "false_positive_rate": 1.0
+      },
+      "test": {
+        "num_samples": 49,
+        "num_anomalous": 36,
+        "image_auroc": 0.5555555555555556,
+        "image_ap": 0.8361982480387496,
+        "threshold": 22.767635345458984,
+        "tp": 34,
+        "fp": 13,
+        "tn": 0,
+        "fn": 2,
+        "accuracy": 0.6938775510204082,
+        "precision": 0.723404255319149,
+        "recall": 0.9444444444444444,
+        "f1": 0.8192771084337349,
+        "false_negative_rate": 0.05555555555555555,
+        "false_positive_rate": 1.0
+      },
+      "test_at_f1_threshold": {
+        "num_samples": 49,
+        "num_anomalous": 36,
+        "image_auroc": 0.5555555555555556,
+        "image_ap": 0.8361982480387496,
+        "threshold": 22.64640998840332,
+        "tp": 35,
+        "fp": 13,
+        "tn": 0,
+        "fn": 1,
+        "accuracy": 0.7142857142857143,
+        "precision": 0.7291666666666666,
+        "recall": 0.9722222222222222,
+        "f1": 0.8333333333333334,
+        "false_negative_rate": 0.027777777777777776,
+        "false_positive_rate": 1.0
+      },
+      "pixel_threshold_val": 13.103441140288012,
+      "pixel_dice_val": 0.6573398401803352,
+      "test_pixel": {
+        "pixel_auroc": 0.9310144930705921,
+        "pixel_ap": 0.48334504802225364,
+        "mean_iou_defective": 0.5370373171707585,
+        "mean_dice_defective": 0.67712167479416,
+        "pixel_threshold": 13.103441140288012
+      },
+      "test_per_defect_type": {
+        "good": {
+          "n": 13,
+          "flagged_anomalous": 13
+        },
+        "major_rust": {
+          "n": 7,
+          "flagged_anomalous": 7
+        },
+        "scratches": {
+          "n": 17,
+          "flagged_anomalous": 17
+        },
+        "total_rust": {
+          "n": 12,
+          "flagged_anomalous": 10
+        }
+      },
+      "score_stats_val_good": {
+        "mean": 32.94471740722656,
+        "max": 40.844207763671875
+      }
+    }
+  },
+  "deployed_engines": [
+    "patchcore"
+  ],
+  "engine_selection": {
+    "rule": "engines with validation image AUROC >= 0.90 vote; others are reported only",
+    "val_image_auroc": {
+      "patchcore": 0.9984126984126984,
+      "padim": 0.4904761904761905
+    }
+  },
+  "fusion": {
+    "rule": "Deployed engines ['patchcore']: FAIL if all >= own threshold; PASS if all below; else REVIEW. REVIEW also if any score within +/-8% of its threshold.",
+    "review_margin": 0.08,
+    "review_rate": 0.20408163265306123,
+    "auto_decided": 39,
+    "auto_accuracy": 1.0,
+    "missed_defects_auto_pass": 0,
+    "false_rejects_auto_fail": 0,
+    "defects_sent_to_review": 10
+  },
+  "unfamiliar_pattern": {
+    "threshold": 0.23318041861057281,
+    "threshold_rule": "1.05 x max global kNN distance on calibration images",
+    "test_in_distribution_flag_rate": 0.0,
+    "foreign_images": 55,
+    "foreign_detection_rate": 1.0,
+    "foreign_sources": [
+      "ksdd2",
+      "mpdd",
+      "mvtec_ad",
+      "neu_cls"
+    ],
+    "train_images_used": 49
+  },
+  "latency_ms_median": {
+    "patchcore": 65.82239999988815,
+    "padim": 90.34699999756413
+  },
+  "threads": 5,
+  "total_time_s": 52.09450936317444,
+  "completed_at": "2026-11-05T12:04:51.044374+00:00",
+  "preprocess": {
+    "input_size": 256,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "color_mode": "rgb",
+    "clahe": false,
+    "denoise": false,
+    "augment": {}
+  }
+}

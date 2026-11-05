@@ -1,0 +1,28 @@
+{
+  "input_size": 224,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "color_mode": "rgb",
+  "clahe": false,
+  "denoise": false,
+  "augment": {
+    "hflip": true,
+    "vflip": true,
+    "rot90": false,
+    "rotate_deg": 0,
+    "zoom": 0.05,
+    "translate": 0.03,
+    "brightness": 0.15,
+    "contrast": 0.15,
+    "noise": false,
+    "cutout": false
+  }
+}

@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+
+# runtime data (DB, uploads, reports, secrets, initial credentials)
+storage/
+
+# datasets (download with scripts/download_datasets.py)
+data/raw/
+data/feedback/
+
+# large model artefacts (re-create with scripts/train_*.py); keep metrics + plots
+artifacts/checkpoints/**/*.pt
+artifacts/checkpoints/**/*.npz
+artifacts/checkpoints/**/STOP
+artifacts/experiments/
+
+# logs
+reports/logs/
+
+# frontend
+frontend/node_modules/
+frontend/dist/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# local backups (contain confidential data)
+backups/
+
+# exported edge models (re-create with scripts/export_onnx.py)
+artifacts/edge/
+
+# demo set (regenerate: python scripts/make_demo_set.py; dataset licences forbid redistribution here)
+data/samples/*
+!data/samples/.gitkeep
+
+# local scratch: bug screenshots, training logs
+/error.png
+artifacts/logs/

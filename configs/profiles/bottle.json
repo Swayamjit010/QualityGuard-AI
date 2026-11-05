@@ -1,0 +1,87 @@
+{
+  "id": "bottle",
+  "version": 1,
+  "name": "Glass bottle (top view)",
+  "description": "Unsupervised anomaly detection + localisation for bottles (MVTec AD 'bottle' domain).",
+  "product_type": "object",
+  "dataset": "mvtec_bottle",
+  "configuration_note": "EXAMPLE configuration: zero-tolerance policy (any detected defect region fails). Area bands are illustrative, not an industrial standard.",
+  "assumes_defect_present": false,
+  "defect_classes": [
+    "broken_large",
+    "broken_small",
+    "contamination"
+  ],
+  "normal_classes": [
+    "good"
+  ],
+  "image": {
+    "min_side_px": 128,
+    "min_contrast": 3.0,
+    "expected_color_mode": "color",
+    "min_sharpness_norm": 61.4
+  },
+  "calibration": {
+    "mm_per_pixel": null
+  },
+  "min_region_area_px": 60,
+  "models": {
+    "classifiers": [],
+    "anomaly": "mvtec_bottle-anomaly-resnet18-v1"
+  },
+  "pipeline": {
+    "engines": [
+      "anomaly",
+      "novelty"
+    ],
+    "primary_anomaly_engine": "patchcore",
+    "cam_methods": []
+  },
+  "severity_rules": {
+    "default_level": "medium",
+    "area_metric": "defect_area_ratio",
+    "area_levels": [
+      {
+        "level": "low",
+        "max": 0.005
+      },
+      {
+        "level": "medium",
+        "max": 0.02
+      },
+      {
+        "level": "high",
+        "max": 0.05
+      },
+      {
+        "level": "critical",
+        "max": null
+      }
+    ],
+    "count_escalation": {
+      "regions_ge": 3,
+      "escalate_by": 1
+    },
+    "intensity_escalation": {
+      "score_ratio_ge": 2.0,
+      "escalate_by": 1
+    }
+  },
+  "acceptance_rules": {
+    "fail_at_severity": "low",
+    "accept_below_fail_level": true,
+    "rejected_classes": [],
+    "unfamiliar_action": "INCONCLUSIVE",
+    "disagreement_action": "REVIEW REQUIRED"
+  },
+  "quality_index": {
+    "deductions": {
+      "none": 0,
+      "low": 10,
+      "medium": 35,
+      "high": 65,
+      "critical": 100
+    },
+    "review_cap": 60
+  }
+}

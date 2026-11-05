@@ -1,0 +1,15 @@
+{
+  "state": "completed",
+  "run_id": "neu_cls-mobilenet_v3_small-v1",
+  "arch": "mobilenet_v3_small",
+  "epoch": 8,
+  "epochs": 8,
+  "message": "completed",
+  "updated_at": "2026-11-05T05:05:41.484115+00:00",
+  "batch": 70,
+  "batches": 79,
+  "val_acc": 1.0,
+  "val_loss": 0.03642093017697334,
+  "test_accuracy": 0.9962962962962963,
+  "test_f1_macro": 0.9962958389924682
+}

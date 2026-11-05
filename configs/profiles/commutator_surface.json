@@ -1,0 +1,102 @@
+{
+  "id": "commutator_surface",
+  "version": 1,
+  "name": "Electrical commutator surface",
+  "description": "Surface-defect detection on electrical commutators (KolektorSDD2 domain): supervised binary classifier, supervised U-Net segmentation and PatchCore/PaDiM anomaly detection.",
+  "product_type": "surface_texture",
+  "dataset": "ksdd2",
+  "configuration_note": "EXAMPLE configuration: severity bands and the reject level are illustrative placeholders, not an industrial standard.",
+  "assumes_defect_present": false,
+  "defect_classes": [
+    "defect"
+  ],
+  "normal_classes": [
+    "good"
+  ],
+  "image": {
+    "min_side_px": 128,
+    "min_contrast": 3.0,
+    "expected_color_mode": "color",
+    "min_sharpness_norm": 30.98
+  },
+  "calibration": {
+    "mm_per_pixel": null
+  },
+  "min_region_area_px": 15,
+  "models": {
+    "classifiers": [
+      "ksdd2-mobilenet_v2-v1",
+      "ksdd2-efficientnet_b0-v1"
+    ],
+    "anomaly": "ksdd2-anomaly-resnet18-v1",
+    "segmentation": "ksdd2-segmentation-unet_resnet18-v1"
+  },
+  "pipeline": {
+    "engines": [
+      "classification",
+      "anomaly",
+      "segmentation",
+      "novelty"
+    ],
+    "primary_anomaly_engine": "patchcore",
+    "decision_engine": "segmentation",
+    "segmentation_review_margin": 0.0,
+    "cam_methods": [
+      "gradcam"
+    ],
+    "voting_engines": [
+      "classification",
+      "segmentation"
+    ],
+    "policy_note": "Chosen on the VALIDATION split (scripts/evaluate_profiles.py --split val): fewest defects auto-passed, then lowest manual rate. Segmentation-only: 5 missed / 2 false alarms / 8.0% manual; classifier+segmentation: 4 / 0 / 9.1%; all three engines: 0 / 0 / 93.7% manual. PatchCore is run for its heat-map but does not vote."
+  },
+  "reliability": {
+    "min_confidence": 0.6,
+    "high_confidence": 0.9,
+    "min_margin": 0.2
+  },
+  "severity_rules": {
+    "default_level": "medium",
+    "area_metric": "defect_area_ratio",
+    "area_levels": [
+      {
+        "level": "low",
+        "max": 0.001
+      },
+      {
+        "level": "medium",
+        "max": 0.005
+      },
+      {
+        "level": "high",
+        "max": 0.02
+      },
+      {
+        "level": "critical",
+        "max": null
+      }
+    ],
+    "count_escalation": {
+      "regions_ge": 3,
+      "escalate_by": 1
+    }
+  },
+  "acceptance_rules": {
+    "fail_at_severity": "low",
+    "accept_below_fail_level": true,
+    "rejected_classes": [],
+    "unfamiliar_action": "INCONCLUSIVE",
+    "disagreement_action": "REVIEW REQUIRED",
+    "review_on_low_reliability": true
+  },
+  "quality_index": {
+    "deductions": {
+      "none": 0,
+      "low": 10,
+      "medium": 35,
+      "high": 65,
+      "critical": 100
+    },
+    "review_cap": 60
+  }
+}

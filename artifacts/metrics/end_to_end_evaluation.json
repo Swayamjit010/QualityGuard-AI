@@ -1,0 +1,414 @@
+{
+  "mode": "auto-recognition (as /api/inspect default)",
+  "split": "test",
+  "profile_override": null,
+  "completed_at": "2026-11-05T12:27:01.594468+00:00",
+  "profiles": {
+    "bottle": {
+      "dataset": "mvtec_bottle",
+      "dataset_version": "924a4fb64ceb",
+      "test_images": 42,
+      "ground_truth": {
+        "DEFECTIVE": 32,
+        "NORMAL": 10
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "NORMAL": 9,
+          "MANUAL INSPECTION REQUIRED": 1
+        },
+        "DEFECTIVE": {
+          "DEFECTIVE": 30,
+          "MANUAL INSPECTION REQUIRED": 2
+        }
+      },
+      "routed_to": {
+        "bottle": 42
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.07142857142857142,
+      "auto_decided": 39,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.9375,
+      "latency_ms": {
+        "p50": 440.3377000016917,
+        "p95": 564.3477399982655
+      }
+    },
+    "commutator_surface": {
+      "dataset": "ksdd2",
+      "dataset_version": "d3ee03708a72",
+      "test_images": 1004,
+      "ground_truth": {
+        "DEFECTIVE": 110,
+        "NORMAL": 894
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "NORMAL": 836,
+          "MANUAL INSPECTION REQUIRED": 57,
+          "DEFECTIVE": 1
+        },
+        "DEFECTIVE": {
+          "DEFECTIVE": 76,
+          "MANUAL INSPECTION REQUIRED": 24,
+          "NORMAL": 10
+        }
+      },
+      "routed_to": {
+        "commutator_surface": 1004
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.08067729083665338,
+      "auto_decided": 923,
+      "auto_decided_accuracy": 0.9880823401950163,
+      "missed_defects (DEFECTIVE->NORMAL)": 10,
+      "false_alarms (NORMAL->DEFECTIVE)": 1,
+      "defect_recall_auto": 0.6909090909090909,
+      "latency_ms": {
+        "p50": 475.58905000187224,
+        "p95": 565.4879599976994
+      }
+    },
+    "metal_grid": {
+      "dataset": "mvtec_grid",
+      "dataset_version": "f8392e106613",
+      "test_images": 41,
+      "ground_truth": {
+        "DEFECTIVE": 30,
+        "NORMAL": 11
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "MANUAL INSPECTION REQUIRED": 11
+        },
+        "DEFECTIVE": {
+          "DEFECTIVE": 24,
+          "MANUAL INSPECTION REQUIRED": 6
+        }
+      },
+      "routed_to": {
+        "metal_grid": 41
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.4146341463414634,
+      "auto_decided": 24,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.8,
+      "latency_ms": {
+        "p50": 411.0417999982019,
+        "p95": 459.24969999759924
+      }
+    },
+    "metal_nut": {
+      "dataset": "mvtec_metal_nut",
+      "dataset_version": "b55eaa096c57",
+      "test_images": 59,
+      "ground_truth": {
+        "DEFECTIVE": 48,
+        "NORMAL": 11
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "NORMAL": 7,
+          "MANUAL INSPECTION REQUIRED": 4
+        },
+        "DEFECTIVE": {
+          "DEFECTIVE": 39,
+          "MANUAL INSPECTION REQUIRED": 9
+        }
+      },
+      "routed_to": {
+        "metal_nut": 59
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.22033898305084745,
+      "auto_decided": 46,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.8125,
+      "latency_ms": {
+        "p50": 387.09210000524763,
+        "p95": 447.44484999755514
+      }
+    },
+    "mpdd_bracket_black": {
+      "dataset": "mpdd_bracket_black",
+      "dataset_version": "f8ba26320257",
+      "test_images": 40,
+      "ground_truth": {
+        "DEFECTIVE": 24,
+        "NORMAL": 16
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "MANUAL INSPECTION REQUIRED": 16
+        },
+        "DEFECTIVE": {
+          "DEFECTIVE": 12,
+          "MANUAL INSPECTION REQUIRED": 12
+        }
+      },
+      "routed_to": {
+        "mpdd_bracket_black": 40
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.7,
+      "auto_decided": 12,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.5,
+      "latency_ms": {
+        "p50": 282.2321500025282,
+        "p95": 326.1682899938023
+      }
+    },
+    "mpdd_bracket_brown": {
+      "dataset": "mpdd_bracket_brown",
+      "dataset_version": "18a8f64df070",
+      "test_images": 39,
+      "ground_truth": {
+        "DEFECTIVE": 26,
+        "NORMAL": 13
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "NORMAL": 12,
+          "MANUAL INSPECTION REQUIRED": 1
+        },
+        "DEFECTIVE": {
+          "DEFECTIVE": 15,
+          "MANUAL INSPECTION REQUIRED": 11
+        }
+      },
+      "routed_to": {
+        "mpdd_bracket_brown": 39
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.3076923076923077,
+      "auto_decided": 27,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.5769230769230769,
+      "latency_ms": {
+        "p50": 284.12289999687346,
+        "p95": 369.184229997336
+      }
+    },
+    "mpdd_bracket_white": {
+      "dataset": "mpdd_bracket_white",
+      "dataset_version": "6ec6fdf1a9a1",
+      "test_images": 31,
+      "ground_truth": {
+        "DEFECTIVE": 16,
+        "NORMAL": 15
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "MANUAL INSPECTION REQUIRED": 12,
+          "DEFECTIVE": 3
+        },
+        "DEFECTIVE": {
+          "DEFECTIVE": 11,
+          "MANUAL INSPECTION REQUIRED": 5
+        }
+      },
+      "routed_to": {
+        "mpdd_bracket_white": 31
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.5483870967741935,
+      "auto_decided": 14,
+      "auto_decided_accuracy": 0.7857142857142857,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 3,
+      "defect_recall_auto": 0.6875,
+      "latency_ms": {
+        "p50": 279.5870999980252,
+        "p95": 351.4708500006236
+      }
+    },
+    "mpdd_connector": {
+      "dataset": "mpdd_connector",
+      "dataset_version": "3df9e51448cf",
+      "test_images": 22,
+      "ground_truth": {
+        "DEFECTIVE": 7,
+        "NORMAL": 15
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "NORMAL": 14,
+          "MANUAL INSPECTION REQUIRED": 1
+        },
+        "DEFECTIVE": {
+          "DEFECTIVE": 5,
+          "MANUAL INSPECTION REQUIRED": 2
+        }
+      },
+      "routed_to": {
+        "mpdd_connector": 22
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.13636363636363635,
+      "auto_decided": 19,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.7142857142857143,
+      "latency_ms": {
+        "p50": 273.6830999965605,
+        "p95": 324.5221999990463
+      }
+    },
+    "mpdd_metal_plate": {
+      "dataset": "mpdd_metal_plate",
+      "dataset_version": "bcf30ac29d7e",
+      "test_images": 49,
+      "ground_truth": {
+        "DEFECTIVE": 36,
+        "NORMAL": 13
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "NORMAL": 13
+        },
+        "DEFECTIVE": {
+          "DEFECTIVE": 26,
+          "MANUAL INSPECTION REQUIRED": 10
+        }
+      },
+      "routed_to": {
+        "mpdd_metal_plate": 49
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.20408163265306123,
+      "auto_decided": 39,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.7222222222222222,
+      "latency_ms": {
+        "p50": 275.9643000026699,
+        "p95": 332.67493999592244
+      }
+    },
+    "mpdd_tubes": {
+      "dataset": "mpdd_tubes",
+      "dataset_version": "fc19d0dabbb6",
+      "test_images": 51,
+      "ground_truth": {
+        "DEFECTIVE": 35,
+        "NORMAL": 16
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "MANUAL INSPECTION REQUIRED": 16
+        },
+        "DEFECTIVE": {
+          "MANUAL INSPECTION REQUIRED": 12,
+          "DEFECTIVE": 23
+        }
+      },
+      "routed_to": {
+        "mpdd_tubes": 51
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.5490196078431373,
+      "auto_decided": 23,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.6571428571428571,
+      "latency_ms": {
+        "p50": 278.1154999975115,
+        "p95": 320.40259999848786
+      }
+    },
+    "screw": {
+      "dataset": "mvtec_screw",
+      "dataset_version": "bbefba50f28c",
+      "test_images": 82,
+      "ground_truth": {
+        "DEFECTIVE": 61,
+        "NORMAL": 21
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "MANUAL INSPECTION REQUIRED": 21
+        },
+        "DEFECTIVE": {
+          "MANUAL INSPECTION REQUIRED": 14,
+          "DEFECTIVE": 47
+        }
+      },
+      "routed_to": {
+        "screw": 82
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.4268292682926829,
+      "auto_decided": 47,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.7704918032786885,
+      "latency_ms": {
+        "p50": 297.0116500000586,
+        "p95": 335.1179000004777
+      }
+    },
+    "steel_strip": {
+      "dataset": "neu_cls",
+      "dataset_version": "4621cecf40e7",
+      "test_images": 270,
+      "ground_truth": {
+        "DEFECTIVE": 270,
+        "NORMAL": 0
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {},
+        "DEFECTIVE": {
+          "DEFECTIVE": 266,
+          "MANUAL INSPECTION REQUIRED": 4
+        }
+      },
+      "routed_to": {
+        "steel_strip": 270
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.014814814814814815,
+      "auto_decided": 266,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.9851851851851852,
+      "latency_ms": {
+        "p50": 198.79340000261436,
+        "p95": 250.67452000184852
+      }
+    }
+  },
+  "foreign": {
+    "imagenette_natural_photos": {
+      "n": 300,
+      "verdicts": {
+        "MANUAL INSPECTION REQUIRED": 300
+      },
+      "manual_rate": 1.0
+    },
+    "mvtec_unsupported_categories": {
+      "n": 120,
+      "verdicts": {
+        "MANUAL INSPECTION REQUIRED": 120
+      },
+      "manual_rate": 1.0
+    }
+  }
+}

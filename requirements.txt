@@ -1,0 +1,39 @@
+# QualityGuard AI - Python dependencies (Python 3.11)
+# CPU-only PyTorch is sufficient; for CUDA install torch/torchvision from https://pytorch.org first.
+
+# --- deep learning / computer vision
+torch>=2.3
+torchvision>=0.18
+timm>=1.0
+numpy>=1.26
+opencv-python-headless>=4.9
+pillow>=10.0
+albumentations>=1.4
+scikit-learn>=1.4
+scipy>=1.12
+matplotlib>=3.8
+statsmodels>=0.14
+psutil>=5.9
+
+# --- backend API
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+pydantic>=2.7
+pydantic-settings>=2.3
+SQLAlchemy>=2.0
+alembic>=1.13             # schema migrations (QG_SCHEMA_MODE=migrations)
+bcrypt>=4.1
+PyJWT>=2.8
+httpx>=0.27
+requests>=2.31
+reportlab>=4.0
+
+# --- user interfaces / optional integrations
+gradio>=5.0              # lightweight inspection UI at /gradio
+anthropic>=0.40          # optional: LLM mode of the quality assistant (needs QG_ANTHROPIC_API_KEY)
+mlflow>=2.12             # optional: experiment tracking during training
+
+# --- tests
+pytest>=8.0
+playwright>=1.45          # browser end-to-end tests (pytest -m e2e); uses installed Chrome or `playwright install chromium`

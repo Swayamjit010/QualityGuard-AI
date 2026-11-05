@@ -1,0 +1,311 @@
+{
+  "measured_at": "2026-11-05T06:16:15+00:00",
+  "environment": {
+    "python": "3.11.5",
+    "torch": "2.8.0+cpu",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "cpu": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel",
+    "logical_cpus": 12,
+    "torch_threads": 10,
+    "ram_total_gb": 15.7,
+    "cuda_available": false,
+    "cpu_load_pct_at_start": 17.4
+  },
+  "classifiers": [
+    {
+      "run_id": "neu_cls-convnext_tiny-v1",
+      "arch": "convnext_tiny",
+      "input_size": 224,
+      "load_ms": 323.2,
+      "checkpoint_mb": 106.2,
+      "params_m": 27.82,
+      "single_image": {
+        "median_ms": 65.19,
+        "p95_ms": 78.15,
+        "min_ms": 61.59,
+        "runs": 30
+      },
+      "throughput_img_per_s": {
+        "1": 14.7,
+        "8": 23.0,
+        "16": 21.6
+      },
+      "rss_increase_on_load_mb": 171.1,
+      "peak_rss_during_inference_mb": 1006.0
+    },
+    {
+      "run_id": "neu_cls-custom_cnn-v1",
+      "arch": "custom_cnn",
+      "input_size": 224,
+      "load_ms": 26.4,
+      "checkpoint_mb": 4.7,
+      "params_m": 1.22,
+      "single_image": {
+        "median_ms": 12.7,
+        "p95_ms": 14.46,
+        "min_ms": 11.1,
+        "runs": 30
+      },
+      "throughput_img_per_s": {
+        "1": 71.3,
+        "8": 107.6,
+        "16": 105.2
+      },
+      "rss_increase_on_load_mb": 0.0,
+      "peak_rss_during_inference_mb": 1363.9
+    },
+    {
+      "run_id": "neu_cls-densenet121-v1",
+      "arch": "densenet121",
+      "input_size": 224,
+      "load_ms": 198.4,
+      "checkpoint_mb": 27.1,
+      "params_m": 6.96,
+      "single_image": {
+        "median_ms": 116.37,
+        "p95_ms": 142.65,
+        "min_ms": 106.46,
+        "runs": 30
+      },
+      "throughput_img_per_s": {
+        "1": 8.8,
+        "8": 14.5,
+        "16": 16.0
+      },
+      "rss_increase_on_load_mb": 45.0,
+      "peak_rss_during_inference_mb": 1495.6
+    },
+    {
+      "run_id": "neu_cls-efficientnet_b0-v1",
+      "arch": "efficientnet_b0",
+      "input_size": 224,
+      "load_ms": 115.4,
+      "checkpoint_mb": 15.6,
+      "params_m": 4.02,
+      "single_image": {
+        "median_ms": 41.45,
+        "p95_ms": 49.68,
+        "min_ms": 37.65,
+        "runs": 30
+      },
+      "throughput_img_per_s": {
+        "1": 22.8,
+        "8": 41.9,
+        "16": 41.5
+      },
+      "rss_increase_on_load_mb": 17.4,
+      "peak_rss_during_inference_mb": 1533.6
+    },
+    {
+      "run_id": "neu_cls-mobilenet_v2-v1",
+      "arch": "mobilenet_v2",
+      "input_size": 224,
+      "load_ms": 73.5,
+      "checkpoint_mb": 8.7,
+      "params_m": 2.23,
+      "single_image": {
+        "median_ms": 31.48,
+        "p95_ms": 37.96,
+        "min_ms": 28.64,
+        "runs": 30
+      },
+      "throughput_img_per_s": {
+        "1": 25.9,
+        "8": 51.4,
+        "16": 50.3
+      },
+      "rss_increase_on_load_mb": 0.0,
+      "peak_rss_during_inference_mb": 1541.2
+    },
+    {
+      "run_id": "neu_cls-mobilenet_v3_small-v1",
+      "arch": "mobilenet_v3_small",
+      "input_size": 224,
+      "load_ms": 85.3,
+      "checkpoint_mb": 5.9,
+      "params_m": 1.52,
+      "single_image": {
+        "median_ms": 15.64,
+        "p95_ms": 17.69,
+        "min_ms": 14.76,
+        "runs": 30
+      },
+      "throughput_img_per_s": {
+        "1": 57.9,
+        "8": 190.0,
+        "16": 217.9
+      },
+      "rss_increase_on_load_mb": 0.0,
+      "peak_rss_during_inference_mb": 1521.9
+    },
+    {
+      "run_id": "neu_cls-resnet50-v1",
+      "arch": "resnet50",
+      "input_size": 224,
+      "load_ms": 343.4,
+      "checkpoint_mb": 90.0,
+      "params_m": 23.52,
+      "single_image": {
+        "median_ms": 95.23,
+        "p95_ms": 122.82,
+        "min_ms": 90.09,
+        "runs": 30
+      },
+      "throughput_img_per_s": {
+        "1": 10.0,
+        "8": 14.8,
+        "16": 15.2
+      },
+      "rss_increase_on_load_mb": 91.7,
+      "peak_rss_during_inference_mb": 1595.3
+    },
+    {
+      "run_id": "neu_cls-vit_tiny-v1",
+      "arch": "vit_tiny",
+      "input_size": 224,
+      "load_ms": 675.2,
+      "checkpoint_mb": 21.1,
+      "params_m": 5.53,
+      "single_image": {
+        "median_ms": 37.19,
+        "p95_ms": 43.03,
+        "min_ms": 29.43,
+        "runs": 30
+      },
+      "throughput_img_per_s": {
+        "1": 26.7,
+        "8": 59.3,
+        "16": 55.8
+      },
+      "rss_increase_on_load_mb": 34.4,
+      "peak_rss_during_inference_mb": 1566.3
+    }
+  ],
+  "anomaly": [
+    {
+      "run_id": "mvtec_bottle-anomaly-resnet18-v1",
+      "load_ms": 162.6,
+      "checkpoint_mb": 80.5,
+      "input_size": 256,
+      "rss_increase_on_load_mb": 328.4,
+      "engines": {
+        "patchcore": {
+          "median_ms": 33.81,
+          "p95_ms": 35.96,
+          "min_ms": 32.57,
+          "runs": 10,
+          "peak_rss_mb": 655.3
+        },
+        "padim": {
+          "median_ms": 54.25,
+          "p95_ms": 60.95,
+          "min_ms": 51.27,
+          "runs": 10,
+          "peak_rss_mb": 655.5
+        }
+      }
+    },
+    {
+      "run_id": "mvtec_metal_nut-anomaly-resnet18-v1",
+      "load_ms": 241.3,
+      "checkpoint_mb": 80.5,
+      "input_size": 256,
+      "rss_increase_on_load_mb": 234.9,
+      "engines": {
+        "patchcore": {
+          "median_ms": 43.67,
+          "p95_ms": 49.57,
+          "min_ms": 40.07,
+          "runs": 10,
+          "peak_rss_mb": 873.9
+        },
+        "padim": {
+          "median_ms": 52.61,
+          "p95_ms": 55.56,
+          "min_ms": 50.85,
+          "runs": 10,
+          "peak_rss_mb": 878.4
+        }
+      }
+    }
+  ],
+  "pipeline": [
+    {
+      "profile_id": "bottle",
+      "without_explanations": {
+        "median_ms": 242.59,
+        "p95_ms": 243.76,
+        "min_ms": 228.61,
+        "runs": 5,
+        "stage_ms_last_run": {
+          "anomaly": 222.1,
+          "total": 241.8
+        },
+        "decision_last_run": "FAIL"
+      },
+      "with_explanations": {
+        "median_ms": 238.73,
+        "p95_ms": 274.61,
+        "min_ms": 233.23,
+        "runs": 5,
+        "stage_ms_last_run": {
+          "anomaly": 212.6,
+          "total": 235.3
+        },
+        "decision_last_run": "FAIL"
+      }
+    },
+    {
+      "profile_id": "metal_nut",
+      "without_explanations": {
+        "median_ms": 225.59,
+        "p95_ms": 241.14,
+        "min_ms": 218.77,
+        "runs": 5,
+        "stage_ms_last_run": {
+          "anomaly": 212.7,
+          "total": 225.4
+        },
+        "decision_last_run": "FAIL"
+      },
+      "with_explanations": {
+        "median_ms": 229.72,
+        "p95_ms": 262.83,
+        "min_ms": 224.59,
+        "runs": 5,
+        "stage_ms_last_run": {
+          "anomaly": 209.8,
+          "total": 223.7
+        },
+        "decision_last_run": "FAIL"
+      }
+    },
+    {
+      "profile_id": "steel_strip",
+      "without_explanations": {
+        "median_ms": 100.53,
+        "p95_ms": 110.44,
+        "min_ms": 92.82,
+        "runs": 5,
+        "stage_ms_last_run": {
+          "classification": 92.1,
+          "total": 92.8
+        },
+        "decision_last_run": "FAIL"
+      },
+      "with_explanations": {
+        "median_ms": 426.81,
+        "p95_ms": 452.41,
+        "min_ms": 402.06,
+        "runs": 5,
+        "stage_ms_last_run": {
+          "classification": 115.6,
+          "explainability": 323.7,
+          "total": 440.1
+        },
+        "decision_last_run": "FAIL"
+      }
+    }
+  ],
+  "peak_rss_mb": 2023.7
+}

@@ -1,0 +1,15 @@
+{
+  "state": "completed",
+  "run_id": "ksdd2-mobilenet_v2-v1",
+  "arch": "mobilenet_v2",
+  "epoch": 10,
+  "epochs": 10,
+  "message": "completed",
+  "updated_at": "2026-11-05T09:28:25.478053+00:00",
+  "batch": 60,
+  "batches": 62,
+  "val_acc": 0.9542857142857143,
+  "val_loss": 0.266985684633255,
+  "test_accuracy": 0.9591633466135459,
+  "test_f1_macro": 0.9004678716073264
+}

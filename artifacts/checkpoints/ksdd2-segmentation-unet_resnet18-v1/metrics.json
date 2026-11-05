@@ -1,0 +1,151 @@
+{
+  "run_id": "ksdd2-segmentation-unet_resnet18-v1",
+  "task": "segmentation",
+  "dataset": "ksdd2",
+  "dataset_version": "d3ee03708a72",
+  "architecture": "U-Net decoder on ImageNet ResNet-18 encoder",
+  "input_hw": [
+    384,
+    128
+  ],
+  "split_sizes": {
+    "train": 1981,
+    "val": 350,
+    "test": 1004
+  },
+  "train_defective_images": 209,
+  "train_defect_free_images": 1772,
+  "best_epoch": 7,
+  "epochs_run": 7,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.3908906918393367,
+      "val_dice": 0.4553453299608963,
+      "val_pixel_auroc": 0.9262449980981308,
+      "val_image_auroc": 0.9093342543821776,
+      "select": 0.682339792171537,
+      "epoch_s": 210.1746289730072
+    },
+    {
+      "epoch": 2,
+      "train_loss": 1.2146968700383838,
+      "val_dice": 0.495080865747768,
+      "val_pixel_auroc": 0.9692983363079868,
+      "val_image_auroc": 0.9568258354200847,
+      "select": 0.7259533505839264,
+      "epoch_s": 215.52990412712097
+    },
+    {
+      "epoch": 3,
+      "train_loss": 1.050135111552106,
+      "val_dice": 0.6216000212042674,
+      "val_pixel_auroc": 0.9594851003252639,
+      "val_image_auroc": 0.9660651066401865,
+      "select": 0.793832563922227,
+      "epoch_s": 211.37218260765076
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.9216109842204592,
+      "val_dice": 0.4093959176580667,
+      "val_pixel_auroc": 0.9251978020136306,
+      "val_image_auroc": 0.9723685346688542,
+      "select": 0.6908822261634604,
+      "epoch_s": 201.26439785957336
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.8360749963653145,
+      "val_dice": 0.5695797722072953,
+      "val_pixel_auroc": 0.8486881760070426,
+      "val_image_auroc": 0.9710733097314567,
+      "select": 0.770326540969376,
+      "epoch_s": 200.52535605430603
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.7764658467336134,
+      "val_dice": 0.4059276313923516,
+      "val_pixel_auroc": 0.9762140291739336,
+      "val_image_auroc": 0.9650289266902685,
+      "select": 0.6854782790413101,
+      "epoch_s": 204.5155668258667
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.7034103896058918,
+      "val_dice": 0.6771625191906976,
+      "val_pixel_auroc": 0.9105341389478254,
+      "val_image_auroc": 0.9859252223469476,
+      "select": 0.8315438707688225,
+      "epoch_s": 214.03194522857666
+    }
+  ],
+  "stopped_early_by_operator": true,
+  "image_threshold_f1_val": 0.9706417322158813,
+  "image_threshold_recall90_val": 0.8721969127655029,
+  "val": {
+    "num_samples": 350,
+    "num_anomalous": 37,
+    "image_auroc": 0.9859252223469476,
+    "image_ap": 0.9220245543268543,
+    "threshold": 0.9706417322158813,
+    "tp": 29,
+    "fp": 2,
+    "tn": 311,
+    "fn": 8,
+    "accuracy": 0.9714285714285714,
+    "precision": 0.9354838709677419,
+    "recall": 0.7837837837837838,
+    "f1": 0.8529411764705882,
+    "false_negative_rate": 0.21621621621621623,
+    "false_positive_rate": 0.006389776357827476
+  },
+  "test": {
+    "num_samples": 1004,
+    "num_anomalous": 110,
+    "image_auroc": 0.9720357941834452,
+    "image_ap": 0.9123885909110672,
+    "threshold": 0.9706417322158813,
+    "tp": 93,
+    "fp": 15,
+    "tn": 879,
+    "fn": 17,
+    "accuracy": 0.9681274900398407,
+    "precision": 0.8611111111111112,
+    "recall": 0.8454545454545455,
+    "f1": 0.8532110091743119,
+    "false_negative_rate": 0.15454545454545454,
+    "false_positive_rate": 0.016778523489932886
+  },
+  "test_at_recall90_threshold": {
+    "num_samples": 1004,
+    "num_anomalous": 110,
+    "image_auroc": 0.9720357941834452,
+    "image_ap": 0.9123885909110672,
+    "threshold": 0.8721969127655029,
+    "tp": 98,
+    "fp": 57,
+    "tn": 837,
+    "fn": 12,
+    "accuracy": 0.9312749003984063,
+    "precision": 0.632258064516129,
+    "recall": 0.8909090909090909,
+    "f1": 0.7396226415094339,
+    "false_negative_rate": 0.10909090909090909,
+    "false_positive_rate": 0.06375838926174497
+  },
+  "test_pixel": {
+    "pixel_auroc": 0.9449532107353281,
+    "pixel_ap": 0.7454223775222978,
+    "mean_iou_defective": 0.5197358271276323,
+    "mean_dice_defective": 0.639584445130954,
+    "pixel_threshold": 0.5
+  },
+  "latency_ms_median": 201.50495000052615,
+  "train_time_s": 184.8682599067688,
+  "completed_at": "2026-11-05T10:37:29.946879+00:00",
+  "image_score": "max of 5x5 average-pooled defect-probability map",
+  "selection": "epoch maximising 0.5*val Dice + 0.5*val image AUROC; thresholds chosen on val; training was stopped after the logged epochs to save time (max 14 planned)"
+}

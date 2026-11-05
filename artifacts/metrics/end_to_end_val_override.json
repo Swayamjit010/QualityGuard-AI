@@ -1,0 +1,41 @@
+{
+  "mode": "explicit profile",
+  "split": "val",
+  "profile_override": "{\"voting_engines\":[\"classification\",\"anomaly\",\"segmentation\"],\"decision_engine\":\"segmentation\",\"segmentation_review_margin\":0}",
+  "completed_at": null,
+  "profiles": {
+    "commutator_surface": {
+      "dataset": "ksdd2",
+      "dataset_version": "d3ee03708a72",
+      "test_images": 350,
+      "ground_truth": {
+        "DEFECTIVE": 37,
+        "NORMAL": 313
+      },
+      "verdicts_by_ground_truth": {
+        "NORMAL": {
+          "MANUAL INSPECTION REQUIRED": 313
+        },
+        "DEFECTIVE": {
+          "MANUAL INSPECTION REQUIRED": 15,
+          "DEFECTIVE": 22
+        }
+      },
+      "routed_to": {
+        "commutator_surface": 350
+      },
+      "routing_accuracy": 1.0,
+      "manual_inspection_rate": 0.9371428571428572,
+      "auto_decided": 22,
+      "auto_decided_accuracy": 1.0,
+      "missed_defects (DEFECTIVE->NORMAL)": 0,
+      "false_alarms (NORMAL->DEFECTIVE)": 0,
+      "defect_recall_auto": 0.5945945945945946,
+      "latency_ms": {
+        "p50": 414.67300000294927,
+        "p95": 477.0081650007342
+      }
+    }
+  },
+  "foreign": {}
+}

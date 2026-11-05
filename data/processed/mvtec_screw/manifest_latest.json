@@ -1,0 +1,5315 @@
+{
+ "name": "mvtec_screw",
+ "version": "bbefba50f28c",
+ "created_at": "2026-11-05T08:27:09.264369+00:00",
+ "num_samples": 480,
+ "split_counts": {
+  "test": {
+   "good": 21,
+   "manipulated_front": 12,
+   "scratch_head": 12,
+   "scratch_neck": 13,
+   "thread_side": 12,
+   "thread_top": 12
+  },
+  "train": {
+   "good": 288
+  },
+  "val": {
+   "good": 52,
+   "manipulated_front": 12,
+   "scratch_head": 12,
+   "scratch_neck": 12,
+   "thread_side": 11,
+   "thread_top": 11
+  }
+ },
+ "meta": {
+  "task": "anomaly_detection",
+  "category": "screw",
+  "split_policy": "train/good: 90% train, 10% val. official test: 50% val (calibration), 50% test (held-out), stratified by defect type",
+  "seed": 42
+ },
+ "samples": [
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/000.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/001.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/002.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/003.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/004.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/005.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/006.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/007.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/008.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/009.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/010.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/011.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/012.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/013.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/014.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/015.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/016.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/017.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/018.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/019.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/020.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/021.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/022.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/023.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/024.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/025.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/026.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/027.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/028.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/029.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/030.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/031.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/032.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/033.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/034.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/035.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/036.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/037.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/038.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/039.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/040.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/041.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/042.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/043.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/044.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/045.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/046.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/047.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/048.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/049.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/050.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/051.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/052.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/053.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/054.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/055.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/056.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/057.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/058.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/059.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/060.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/061.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/062.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/063.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/064.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/065.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/066.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/067.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/068.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/069.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/070.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/071.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/072.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/073.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/074.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/075.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/076.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/077.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/078.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/079.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/080.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/081.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/082.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/083.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/084.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/085.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/086.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/087.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/088.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/089.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/090.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/091.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/092.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/093.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/094.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/095.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/096.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/097.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/098.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/099.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/100.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/101.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/102.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/103.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/104.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/105.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/106.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/107.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/108.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/109.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/110.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/111.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/112.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/113.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/114.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/115.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/116.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/117.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/118.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/119.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/120.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/121.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/122.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/123.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/124.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/125.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/126.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/127.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/128.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/129.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/130.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/131.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/132.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/133.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/134.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/135.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/136.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/137.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/138.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/139.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/140.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/141.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/142.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/143.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/144.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/145.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/146.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/147.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/148.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/149.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/150.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/151.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/152.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/153.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/154.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/155.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/156.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/157.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/158.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/159.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/160.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/161.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/162.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/163.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/164.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/165.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/166.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/167.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/168.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/169.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/170.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/171.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/172.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/173.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/174.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/175.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/176.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/177.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/178.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/179.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/180.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/181.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/182.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/183.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/184.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/185.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/186.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/187.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/188.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/189.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/190.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/191.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/192.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/193.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/194.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/195.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/196.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/197.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/198.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/199.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/200.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/201.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/202.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/203.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/204.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/205.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/206.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/207.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/208.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/209.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/210.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/211.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/212.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/213.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/214.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/215.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/216.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/217.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/218.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/219.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/220.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/221.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/222.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/223.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/224.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/225.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/226.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/227.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/228.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/229.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/230.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/231.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/232.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/233.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/234.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/235.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/236.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/237.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/238.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/239.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/240.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/241.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/242.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/243.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/244.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/245.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/246.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/247.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/248.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/249.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/250.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/251.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/252.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/253.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/254.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/255.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/256.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/257.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/258.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/259.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/260.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/261.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/262.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/263.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/264.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/265.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/266.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/267.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/268.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/269.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/270.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/271.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/272.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/273.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/274.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/275.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/276.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/277.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/278.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/279.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/280.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/281.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/282.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/283.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/284.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/285.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/286.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/287.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/288.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/289.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/290.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/291.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/292.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/293.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/294.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/295.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/296.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/297.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/298.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/299.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/300.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/301.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/302.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/303.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/304.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/305.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/306.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/307.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/308.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/309.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/310.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/311.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/312.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/313.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/314.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/315.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/316.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "train"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/317.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/318.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/train/good/319.png",
+   "label": "good",
+   "split_hint": "train",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/000.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/001.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/002.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/003.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/004.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/005.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/006.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/007.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/008.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/009.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/010.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/011.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/012.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/013.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/014.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/015.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/016.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/017.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/018.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/019.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/020.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/021.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/022.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/023.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/024.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/025.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/026.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/027.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/028.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/029.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/030.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/031.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/032.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/033.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/034.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/035.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/036.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/037.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/038.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/039.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/good/040.png",
+   "label": "good",
+   "split_hint": "test",
+   "mask_path": null,
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/000.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/000_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/001.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/001_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/002.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/002_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/003.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/003_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/004.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/004_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/005.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/005_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/006.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/006_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/007.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/007_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/008.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/008_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/009.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/009_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/010.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/010_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/011.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/011_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/012.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/012_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/013.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/013_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/014.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/014_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/015.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/015_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/016.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/016_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/017.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/017_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/018.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/018_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/019.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/019_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/020.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/020_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/021.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/021_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/022.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/022_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/manipulated_front/023.png",
+   "label": "manipulated_front",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/manipulated_front/023_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/000.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/000_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/001.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/001_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/002.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/002_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/003.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/003_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/004.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/004_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/005.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/005_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/006.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/006_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/007.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/007_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/008.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/008_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/009.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/009_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/010.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/010_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/011.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/011_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/012.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/012_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/013.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/013_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/014.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/014_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/015.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/015_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/016.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/016_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/017.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/017_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/018.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/018_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/019.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/019_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/020.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/020_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/021.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/021_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/022.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/022_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_head/023.png",
+   "label": "scratch_head",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_head/023_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/000.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/000_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/001.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/001_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/002.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/002_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/003.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/003_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/004.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/004_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/005.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/005_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/006.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/006_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/007.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/007_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/008.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/008_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/009.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/009_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/010.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/010_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/011.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/011_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/012.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/012_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/013.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/013_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/014.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/014_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/015.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/015_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/016.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/016_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/017.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/017_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/018.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/018_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/019.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/019_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/020.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/020_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/021.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/021_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/022.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/022_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/023.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/023_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/scratch_neck/024.png",
+   "label": "scratch_neck",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/scratch_neck/024_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/000.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/000_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/001.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/001_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/002.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/002_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/003.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/003_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/004.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/004_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/005.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/005_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/006.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/006_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/007.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/007_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/008.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/008_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/009.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/009_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/010.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/010_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/011.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/011_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/012.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/012_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/013.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/013_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/014.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/014_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/015.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/015_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/016.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/016_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/017.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/017_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/018.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/018_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/019.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/019_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/020.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/020_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/021.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/021_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_side/022.png",
+   "label": "thread_side",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_side/022_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/000.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/000_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/001.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/001_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/002.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/002_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/003.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/003_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/004.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/004_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/005.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/005_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/006.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/006_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/007.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/007_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/008.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/008_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/009.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/009_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/010.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/010_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/011.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/011_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/012.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/012_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/013.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/013_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/014.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/014_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/015.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/015_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/016.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/016_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/017.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/017_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/018.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/018_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/019.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/019_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/020.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/020_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "test"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/021.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/021_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  },
+  {
+   "path": "data/raw/mvtec_ad/screw/test/thread_top/022.png",
+   "label": "thread_top",
+   "split_hint": "test",
+   "mask_path": "data/raw/mvtec_ad/screw/ground_truth/thread_top/022_mask.png",
+   "group": null,
+   "meta": {
+    "category": "screw"
+   },
+   "split": "val"
+  }
+ ]
+}

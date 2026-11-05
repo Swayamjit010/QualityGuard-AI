@@ -1,0 +1,79 @@
+{
+  "id": "steel_strip",
+  "version": 1,
+  "name": "Hot-rolled steel strip surface",
+  "description": "Defect-type classification of steel strip surface crops (NEU-CLS domain, 200x200 grayscale).",
+  "product_type": "surface_texture",
+  "dataset": "neu_cls",
+  "configuration_note": "EXAMPLE configuration for demonstration. Severity levels and acceptance rules are placeholders and must be replaced by the manufacturer's own validated criteria.",
+  "assumes_defect_present": true,
+  "assumption_note": "The NEU-CLS training data contains no defect-free class, so this profile cannot certify a surface as defect-free; it identifies WHICH known defect type is present, and flags unfamiliar inputs.",
+  "defect_classes": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled-in_scale",
+    "scratches"
+  ],
+  "normal_classes": [],
+  "image": {
+    "min_side_px": 64,
+    "min_contrast": 3.0,
+    "expected_color_mode": "grayscale",
+    "min_sharpness_norm": 2.14
+  },
+  "calibration": {
+    "mm_per_pixel": null
+  },
+  "models": {
+    "classifiers": [
+      "neu_cls-efficientnet_b0-v1",
+      "neu_cls-mobilenet_v2-v1"
+    ],
+    "anomaly": null
+  },
+  "pipeline": {
+    "engines": [
+      "classification"
+    ],
+    "cam_methods": [
+      "gradcam",
+      "gradcam_pp"
+    ]
+  },
+  "reliability": {
+    "min_confidence": 0.6,
+    "high_confidence": 0.9,
+    "min_margin": 0.2
+  },
+  "severity_rules": {
+    "default_level": "medium",
+    "class_min_level": {
+      "crazing": "medium",
+      "inclusion": "high",
+      "patches": "medium",
+      "pitted_surface": "high",
+      "rolled-in_scale": "medium",
+      "scratches": "high"
+    }
+  },
+  "acceptance_rules": {
+    "fail_at_severity": "medium",
+    "accept_below_fail_level": true,
+    "rejected_classes": [],
+    "unfamiliar_action": "INCONCLUSIVE",
+    "disagreement_action": "REVIEW REQUIRED",
+    "review_on_low_reliability": true
+  },
+  "quality_index": {
+    "deductions": {
+      "none": 0,
+      "low": 10,
+      "medium": 35,
+      "high": 65,
+      "critical": 100
+    },
+    "review_cap": 60
+  }
+}

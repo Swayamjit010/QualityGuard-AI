@@ -1,0 +1,86 @@
+{
+  "id": "mpdd_bracket_brown",
+  "version": 1,
+  "name": "Metal bracket (brown)",
+  "description": "Unsupervised anomaly detection + localisation for metal bracket (brown) (MPDD \u2014 Metal Parts Defect Detection; parts photographed at varied positions, orientations and backgrounds).",
+  "product_type": "object",
+  "dataset": "mpdd_bracket_brown",
+  "configuration_note": "EXAMPLE configuration: area bands and the reject level are illustrative placeholders, not an industrial standard.",
+  "assumes_defect_present": false,
+  "defect_classes": [
+    "bend_and_parts_mismatch",
+    "parts_mismatch"
+  ],
+  "normal_classes": [
+    "good"
+  ],
+  "image": {
+    "min_side_px": 128,
+    "min_contrast": 3.0,
+    "expected_color_mode": "color",
+    "min_sharpness_norm": 37.03
+  },
+  "calibration": {
+    "mm_per_pixel": null
+  },
+  "min_region_area_px": 40,
+  "models": {
+    "classifiers": [],
+    "anomaly": "mpdd_bracket_brown-anomaly-resnet18-v1"
+  },
+  "pipeline": {
+    "engines": [
+      "anomaly",
+      "novelty"
+    ],
+    "primary_anomaly_engine": "patchcore",
+    "cam_methods": []
+  },
+  "severity_rules": {
+    "default_level": "medium",
+    "area_metric": "defect_area_ratio",
+    "area_levels": [
+      {
+        "level": "low",
+        "max": 0.005
+      },
+      {
+        "level": "medium",
+        "max": 0.02
+      },
+      {
+        "level": "high",
+        "max": 0.05
+      },
+      {
+        "level": "critical",
+        "max": null
+      }
+    ],
+    "count_escalation": {
+      "regions_ge": 3,
+      "escalate_by": 1
+    },
+    "intensity_escalation": {
+      "score_ratio_ge": 2.0,
+      "escalate_by": 1
+    }
+  },
+  "acceptance_rules": {
+    "fail_at_severity": "medium",
+    "accept_below_fail_level": true,
+    "rejected_classes": [],
+    "unfamiliar_action": "INCONCLUSIVE",
+    "disagreement_action": "REVIEW REQUIRED"
+  },
+  "quality_index": {
+    "deductions": {
+      "none": 0,
+      "low": 10,
+      "medium": 35,
+      "high": 65,
+      "critical": 100
+    },
+    "review_cap": 60
+  }
+}

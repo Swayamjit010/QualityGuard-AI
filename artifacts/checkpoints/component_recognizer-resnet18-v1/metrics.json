@@ -1,0 +1,463 @@
+{
+  "run_id": "component_recognizer-resnet18-v1",
+  "task": "component_recognition",
+  "completed_at": "2026-11-05T12:11:27.244689+00:00",
+  "embedder": "torchvision resnet18 IMAGENET1K_V1, GAP(layer3)+GAP(layer4), L2-normalised",
+  "classifier": "multinomial logistic regression (C=2, balanced)",
+  "rejection_rule": "supported iff probability >= 0.8 AND 5-NN cosine distance <= per-domain threshold (1.10 x 99th percentile of held-out calibration distances)",
+  "domains": {
+    "bottle": {
+      "manifest": "mvtec_bottle",
+      "profile_id": "bottle",
+      "title": "Bottle"
+    },
+    "commutator": {
+      "manifest": "ksdd2",
+      "profile_id": "commutator_surface",
+      "title": "Electrical commutator surface"
+    },
+    "metal_grid": {
+      "manifest": "mvtec_grid",
+      "profile_id": "metal_grid",
+      "title": "Metal grid / mesh"
+    },
+    "metal_nut": {
+      "manifest": "mvtec_metal_nut",
+      "profile_id": "metal_nut",
+      "title": "Metal nut"
+    },
+    "mpdd_bracket_black": {
+      "manifest": "mpdd_bracket_black",
+      "profile_id": "mpdd_bracket_black",
+      "title": "Metal bracket (black)"
+    },
+    "mpdd_bracket_brown": {
+      "manifest": "mpdd_bracket_brown",
+      "profile_id": "mpdd_bracket_brown",
+      "title": "Metal bracket (brown)"
+    },
+    "mpdd_bracket_white": {
+      "manifest": "mpdd_bracket_white",
+      "profile_id": "mpdd_bracket_white",
+      "title": "Metal bracket (white)"
+    },
+    "mpdd_connector": {
+      "manifest": "mpdd_connector",
+      "profile_id": "mpdd_connector",
+      "title": "Metal connector"
+    },
+    "mpdd_metal_plate": {
+      "manifest": "mpdd_metal_plate",
+      "profile_id": "mpdd_metal_plate",
+      "title": "Metal plate"
+    },
+    "mpdd_tubes": {
+      "manifest": "mpdd_tubes",
+      "profile_id": "mpdd_tubes",
+      "title": "Metal tubes"
+    },
+    "screw": {
+      "manifest": "mvtec_screw",
+      "profile_id": "screw",
+      "title": "Screw"
+    },
+    "steel_strip": {
+      "manifest": "neu_cls",
+      "profile_id": "steel_strip",
+      "title": "Hot-rolled steel strip surface"
+    }
+  },
+  "dataset_versions": {
+    "steel_strip": "4621cecf40e7",
+    "bottle": "924a4fb64ceb",
+    "metal_nut": "b55eaa096c57",
+    "screw": "bbefba50f28c",
+    "metal_grid": "f8392e106613",
+    "commutator": "d3ee03708a72",
+    "mpdd_bracket_black": "f8ba26320257",
+    "mpdd_bracket_brown": "18a8f64df070",
+    "mpdd_bracket_white": "6ec6fdf1a9a1",
+    "mpdd_connector": "3df9e51448cf",
+    "mpdd_metal_plate": "bcf30ac29d7e",
+    "mpdd_tubes": "fc19d0dabbb6"
+  },
+  "fit": {
+    "train_images": 2825,
+    "per_domain": {
+      "bottle": 219,
+      "commutator": 400,
+      "metal_grid": 269,
+      "metal_nut": 237,
+      "mpdd_bracket_black": 294,
+      "mpdd_bracket_brown": 195,
+      "mpdd_bracket_white": 119,
+      "mpdd_connector": 133,
+      "mpdd_metal_plate": 75,
+      "mpdd_tubes": 141,
+      "screw": 343,
+      "steel_strip": 400
+    }
+  },
+  "calibration": {
+    "bottle": {
+      "n": 31,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.11570356041193008,
+      "max_calib_distance": 0.11146941035985947
+    },
+    "commutator": {
+      "n": 175,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.12913183867931366,
+      "max_calib_distance": 0.15845873951911926
+    },
+    "metal_grid": {
+      "n": 32,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.05206996202468872,
+      "max_calib_distance": 0.05092313140630722
+    },
+    "metal_nut": {
+      "n": 39,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.0612783320248127,
+      "max_calib_distance": 0.05750160291790962
+    },
+    "mpdd_bracket_black": {
+      "n": 34,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.07633539289236069,
+      "max_calib_distance": 0.07181714475154877
+    },
+    "mpdd_bracket_brown": {
+      "n": 28,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.07752357423305511,
+      "max_calib_distance": 0.07429879903793335
+    },
+    "mpdd_bracket_white": {
+      "n": 20,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.07171282917261124,
+      "max_calib_distance": 0.06567646563053131
+    },
+    "mpdd_connector": {
+      "n": 17,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.06988715380430222,
+      "max_calib_distance": 0.06369037926197052
+    },
+    "mpdd_metal_plate": {
+      "n": 27,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.11526928842067719,
+      "max_calib_distance": 0.11284327507019043
+    },
+    "mpdd_tubes": {
+      "n": 31,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.07805148512125015,
+      "max_calib_distance": 0.07273928821086884
+    },
+    "screw": {
+      "n": 55,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.04045473784208298,
+      "max_calib_distance": 0.03881573677062988
+    },
+    "steel_strip": {
+      "n": 135,
+      "q": 0.99,
+      "factor": 1.1,
+      "threshold": 0.22856827080249786,
+      "max_calib_distance": 0.22526147961616516
+    }
+  },
+  "test": {
+    "n": 1730,
+    "top1_accuracy": 1.0,
+    "false_reject_rate": 0.015028901734104046,
+    "accepted_but_wrong_domain": 0,
+    "per_domain": {
+      "bottle": {
+        "n": 42,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 1.0,
+        "false_reject_rate": 0.0,
+        "accepted_but_wrong_domain": 0
+      },
+      "commutator": {
+        "n": 1004,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 0.9870517928286853,
+        "false_reject_rate": 0.012948207171314742,
+        "accepted_but_wrong_domain": 0
+      },
+      "metal_grid": {
+        "n": 41,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 0.926829268292683,
+        "false_reject_rate": 0.07317073170731707,
+        "accepted_but_wrong_domain": 0
+      },
+      "metal_nut": {
+        "n": 59,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 0.9830508474576272,
+        "false_reject_rate": 0.01694915254237288,
+        "accepted_but_wrong_domain": 0
+      },
+      "mpdd_bracket_black": {
+        "n": 40,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 0.975,
+        "false_reject_rate": 0.025,
+        "accepted_but_wrong_domain": 0
+      },
+      "mpdd_bracket_brown": {
+        "n": 39,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 0.9743589743589743,
+        "false_reject_rate": 0.02564102564102564,
+        "accepted_but_wrong_domain": 0
+      },
+      "mpdd_bracket_white": {
+        "n": 31,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 1.0,
+        "false_reject_rate": 0.0,
+        "accepted_but_wrong_domain": 0
+      },
+      "mpdd_connector": {
+        "n": 22,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 0.9545454545454546,
+        "false_reject_rate": 0.045454545454545456,
+        "accepted_but_wrong_domain": 0
+      },
+      "mpdd_metal_plate": {
+        "n": 49,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 1.0,
+        "false_reject_rate": 0.0,
+        "accepted_but_wrong_domain": 0
+      },
+      "mpdd_tubes": {
+        "n": 51,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 0.9803921568627451,
+        "false_reject_rate": 0.0196078431372549,
+        "accepted_but_wrong_domain": 0
+      },
+      "screw": {
+        "n": 82,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 0.9878048780487805,
+        "false_reject_rate": 0.012195121951219513,
+        "accepted_but_wrong_domain": 0
+      },
+      "steel_strip": {
+        "n": 270,
+        "top1_accuracy": 1.0,
+        "accepted_and_correct": 0.9851851851851852,
+        "false_reject_rate": 0.014814814814814815,
+        "accepted_but_wrong_domain": 0
+      }
+    },
+    "confusion_matrix": {
+      "bottle": {
+        "bottle": 42,
+        "commutator": 0,
+        "metal_grid": 0,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 0,
+        "screw": 0,
+        "steel_strip": 0
+      },
+      "commutator": {
+        "bottle": 0,
+        "commutator": 1004,
+        "metal_grid": 0,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 0,
+        "screw": 0,
+        "steel_strip": 0
+      },
+      "metal_grid": {
+        "bottle": 0,
+        "commutator": 0,
+        "metal_grid": 41,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 0,
+        "screw": 0,
+        "steel_strip": 0
+      },
+      "metal_nut": {
+        "bottle": 0,
+        "commutator": 0,
+        "metal_grid": 0,
+        "metal_nut": 59,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 0,
+        "screw": 0,
+        "steel_strip": 0
+      },
+      "mpdd_bracket_black": {
+        "bottle": 0,
+        "commutator": 0,
+        "metal_grid": 0,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 40,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 0,
+        "screw": 0,
+        "steel_strip": 0
+      },
+      "mpdd_bracket_brown": {
+        "bottle": 0,
+        "commutator": 0,
+        "metal_grid": 0,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 39,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 0,
+        "screw": 0,
+        "steel_strip": 0
+      },
+      "mpdd_bracket_white": {
+        "bottle": 0,
+        "commutator": 0,
+        "metal_grid": 0,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 31,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 0,
+        "screw": 0,
+        "steel_strip": 0
+      },
+      "mpdd_connector": {
+        "bottle": 0,
+        "commutator": 0,
+        "metal_grid": 0,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 22,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 0,
+        "screw": 0,
+        "steel_strip": 0
+      },
+      "mpdd_metal_plate": {
+        "bottle": 0,
+        "commutator": 0,
+        "metal_grid": 0,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 49,
+        "mpdd_tubes": 0,
+        "screw": 0,
+        "steel_strip": 0
+      },
+      "mpdd_tubes": {
+        "bottle": 0,
+        "commutator": 0,
+        "metal_grid": 0,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 51,
+        "screw": 0,
+        "steel_strip": 0
+      },
+      "screw": {
+        "bottle": 0,
+        "commutator": 0,
+        "metal_grid": 0,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 0,
+        "screw": 82,
+        "steel_strip": 0
+      },
+      "steel_strip": {
+        "bottle": 0,
+        "commutator": 0,
+        "metal_grid": 0,
+        "metal_nut": 0,
+        "mpdd_bracket_black": 0,
+        "mpdd_bracket_brown": 0,
+        "mpdd_bracket_white": 0,
+        "mpdd_connector": 0,
+        "mpdd_metal_plate": 0,
+        "mpdd_tubes": 0,
+        "screw": 0,
+        "steel_strip": 270
+      }
+    }
+  },
+  "foreign_probes": {
+    "imagenette_natural_photos": {
+      "n": 300,
+      "rejected_rate": 1.0,
+      "accepted_as": {}
+    },
+    "mvtec_unsupported_categories": {
+      "n": 120,
+      "rejected_rate": 1.0,
+      "accepted_as": {}
+    }
+  },
+  "total_time_s": 262.22508573532104,
+  "limitations": "Recognises only the trained domains. Rejection of unsupported images is measured on the listed probe sets only; other kinds of images may behave differently."
+}

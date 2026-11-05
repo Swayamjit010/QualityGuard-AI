@@ -1,0 +1,143 @@
+{
+  "run_id": "custom_demo_hex_nut-anomaly-resnet18-v1",
+  "category": "custom_demo_hex_nut",
+  "dataset": "custom_demo_hex_nut",
+  "product": {
+    "slug": "demo_hex_nut",
+    "name": "Demo hex nut",
+    "description": "Created through the API from 30 good photos",
+    "created_by": "admin@qualityguard.local",
+    "created_at": "2026-11-05T07:08:58.231461Z"
+  },
+  "backbone": "resnet18",
+  "dataset_version": "30g5d",
+  "split_sizes": {
+    "good": 30,
+    "calibration_folds": 5,
+    "defect_examples": 5
+  },
+  "fit": {
+    "patchcore": {
+      "patches_total": 30720,
+      "memory_bank": 3072,
+      "feature_dim": 384
+    },
+    "padim": {
+      "positions": 4096,
+      "dims": 100,
+      "train_images": 30
+    },
+    "global_novelty": {
+      "reference_images": 30
+    }
+  },
+  "engines": {
+    "patchcore": {
+      "deployed_threshold": 2.57084321975708,
+      "threshold_rule": "max out-of-fold good score x 1.1 (5-fold)",
+      "pixel_threshold_val": 1.9884525537490845,
+      "score_stats_val_good": {
+        "mean": 2.001965284347534,
+        "max": 2.337130069732666
+      },
+      "test": {
+        "num_samples": 35,
+        "num_anomalous": 5,
+        "image_auroc": 1.0,
+        "image_ap": 1.0,
+        "threshold": 2.57084321975708,
+        "tp": 4,
+        "fp": 0,
+        "tn": 30,
+        "fn": 1,
+        "accuracy": 0.9714285714285714,
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8888888888888888,
+        "false_negative_rate": 0.2,
+        "false_positive_rate": 0.0
+      },
+      "test_pixel": {
+        "pixel_auroc": null
+      },
+      "defect_detection_rate": 0.8
+    },
+    "padim": {
+      "deployed_threshold": 28.448366165161133,
+      "threshold_rule": "max out-of-fold good score x 1.1 (5-fold)",
+      "pixel_threshold_val": 18.611759185791016,
+      "score_stats_val_good": {
+        "mean": 20.53856658935547,
+        "max": 25.862150192260742
+      },
+      "test": {
+        "num_samples": 35,
+        "num_anomalous": 5,
+        "image_auroc": 0.7799999999999999,
+        "image_ap": 0.4967023172905526,
+        "threshold": 28.448366165161133,
+        "tp": 1,
+        "fp": 0,
+        "tn": 30,
+        "fn": 4,
+        "accuracy": 0.8857142857142857,
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.3333333333333333,
+        "false_negative_rate": 0.8,
+        "false_positive_rate": 0.0
+      },
+      "test_pixel": {
+        "pixel_auroc": null
+      },
+      "defect_detection_rate": 0.2
+    }
+  },
+  "calibration_protocol": {
+    "image_threshold": "max out-of-fold good score x 1.1 (5-fold)",
+    "pixel_threshold": "99.5th percentile of out-of-fold good anomaly-map values",
+    "unfamiliar_threshold": "max(out-of-fold good distance x 2.0, 0.5 x 5th percentile of foreign-image distances)",
+    "defect_examples_use": "reporting only (never used to set thresholds)"
+  },
+  "unfamiliar_pattern": {
+    "threshold": 0.26815250515937805,
+    "threshold_rule": "max(out-of-fold good distance x 2.0, 0.5 x 5th percentile of foreign-image distances)",
+    "good_out_of_fold_max": 0.13407625257968903,
+    "good_flag_rate": 0.0,
+    "foreign_images": 90,
+    "foreign_detection_rate": 0.6666666666666666
+  },
+  "fusion": {
+    "rule": "FAIL if both engines exceed their threshold; PASS if both below; otherwise or within +/-10% of a threshold: REVIEW",
+    "review_margin": 0.1,
+    "defects_auto_failed": 1,
+    "defects_auto_passed": 1,
+    "defects_sent_to_review": 3
+  },
+  "latency_ms_median": {
+    "patchcore": 85.91320000414271,
+    "padim": 104.03539999970235
+  },
+  "total_time_s": 159.3815085887909,
+  "completed_at": "2026-11-05T07:11:44.520485+00:00",
+  "preprocess": {
+    "input_size": 256,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "color_mode": "rgb",
+    "clahe": false,
+    "denoise": false,
+    "augment": {}
+  },
+  "warnings": [
+    "padim caught only 20% of the supplied defective photos: small or subtle defects may be missed - such items will often go to REVIEW."
+  ]
+}
