@@ -1,5 +1,10 @@
 # QualityGuard AI
 
+> **Live demo:** https://qualityguard.tail945149.ts.net — hosted from the author's PC via Tailscale Funnel, so it is online only
+> while that PC is on. Create an account, then use *Request inspection access*; an administrator approves it.
+> Trained models: [Release v1.0.0](https://github.com/Swayamjit010/QualityGuard-AI/releases/tag/v1.0.0). Non-commercial use only (dataset licences).
+
+
 **Deep learning-based industrial product defect detection and quality inspection system**
 KIIT School of Computer Engineering · Project 2026–27
 
